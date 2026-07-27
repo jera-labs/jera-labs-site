@@ -68,6 +68,36 @@
       }
     }
   },
+  "ProblemSolutions": {
+    "title": "Problems we can help you solve",
+    "description": "We don’t start from a specific tool. First we understand what’s holding the business back, then we design the right solution.",
+    "items": {
+      "repetitiveOps": {
+        "title": "Repetitive operations",
+        "body": "We automate tasks that consume time and reduce the team’s capacity to focus on important decisions."
+      },
+      "disconnectedSystems": {
+        "title": "Disconnected systems",
+        "body": "We integrate tools, data, and channels so operations work as a system instead of isolated pieces."
+      },
+      "messyCommercial": {
+        "title": "Disorganized commercial processes",
+        "body": "We design flows, CRM, and automations that organize prospect and customer follow-up."
+      },
+      "ideasToValidate": {
+        "title": "Ideas that need validation",
+        "body": "We build landing pages and MVPs to turn an idea into a working solution that can be tested in the market."
+      },
+      "hardToUseInfo": {
+        "title": "Information that’s hard to use",
+        "body": "We create dashboards, panels, and internal systems that turn scattered data into clear information."
+      },
+      "opsLimitedGrowth": {
+        "title": "Growth limited by operations",
+        "body": "We optimize processes and digital architecture so the company can grow without unnecessarily multiplying complexity."
+      }
+    }
+  },
   "Placeholder": {
     "backHome": "Back to home",
     "comingSoon": "This page will be part of the next stage of the site."

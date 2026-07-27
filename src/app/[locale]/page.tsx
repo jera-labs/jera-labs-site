@@ -1,5 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/home/hero";
+import { ProblemSolutions } from "@/components/home/problem-solutions";
 import { SystemProblem } from "@/components/home/system-problem";
 import { createPageMetadata } from "@/lib/metadata";
 
@@ -20,6 +21,7 @@ export default async function HomePage({ params }: HomePageProps) {
     <>
       <Hero />
       <SystemProblem />
+      <ProblemSolutions />
     </>
   );
 }

@@ -68,6 +68,36 @@
       }
     }
   },
+  "ProblemSolutions": {
+    "title": "Problemas que podemos ayudarte a resolver",
+    "description": "No partimos de una herramienta específica. Primero entendemos qué está frenando al negocio y después diseñamos la solución adecuada.",
+    "items": {
+      "repetitiveOps": {
+        "title": "Operaciones repetitivas",
+        "body": "Automatizamos tareas que consumen tiempo y reducen la capacidad del equipo para concentrarse en decisiones importantes."
+      },
+      "disconnectedSystems": {
+        "title": "Sistemas desconectados",
+        "body": "Integramos herramientas, datos y canales para que la operación funcione como un sistema y no como piezas aisladas."
+      },
+      "messyCommercial": {
+        "title": "Procesos comerciales desorganizados",
+        "body": "Diseñamos flujos, CRM y automatizaciones que ordenan el seguimiento de prospectos y clientes."
+      },
+      "ideasToValidate": {
+        "title": "Ideas que necesitan validarse",
+        "body": "Construimos landing pages y MVPs para convertir una idea en una solución funcional que pueda probarse en el mercado."
+      },
+      "hardToUseInfo": {
+        "title": "Información difícil de utilizar",
+        "body": "Creamos dashboards, paneles y sistemas internos que convierten datos dispersos en información clara."
+      },
+      "opsLimitedGrowth": {
+        "title": "Crecimiento limitado por la operación",
+        "body": "Optimizamos procesos y arquitectura digital para que la empresa pueda crecer sin multiplicar innecesariamente la complejidad."
+      }
+    }
+  },
   "Placeholder": {
     "backHome": "Volver al inicio",
     "comingSoon": "Esta página formará parte de la próxima etapa del sitio."
