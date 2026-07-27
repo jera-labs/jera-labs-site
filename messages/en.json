@@ -183,6 +183,7 @@
     "submitting": "Sending...",
     "success": "We received your message. We’ll get back to you soon.",
     "error": "We couldn’t send the message. Please try again in a few minutes.",
+    "orEmail": "You can also email us at",
     "validation": {
       "nameRequired": "Please enter your name.",
       "emailRequired": "Please enter your email.",

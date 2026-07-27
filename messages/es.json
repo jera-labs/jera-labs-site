@@ -183,6 +183,7 @@
     "submitting": "Enviando...",
     "success": "Recibimos tu mensaje. Te vamos a contactar pronto.",
     "error": "No pudimos enviar el mensaje. Intentá de nuevo en unos minutos.",
+    "orEmail": "También podés escribirnos a",
     "validation": {
       "nameRequired": "Ingresá tu nombre.",
       "emailRequired": "Ingresá tu email.",

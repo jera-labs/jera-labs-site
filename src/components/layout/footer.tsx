@@ -3,6 +3,7 @@ import { navigationItems } from "@/content/navigation";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/container";
 import { Logo } from "@/components/shared/logo";
+import { siteConfig } from "@/lib/constants";
 
 export async function Footer() {
   const tNav = await getTranslations("Navigation");
@@ -20,6 +21,12 @@ export async function Footer() {
           <p className="max-w-md text-sm leading-relaxed text-soft-gray/85">
             {tFooter("description")}
           </p>
+          <a
+            href={`mailto:${siteConfig.email}`}
+            className="inline-flex text-sm text-tech-teal transition-colors hover:text-ivory-white"
+          >
+            {siteConfig.email}
+          </a>
         </div>
 
         <div className="min-w-0 space-y-4">

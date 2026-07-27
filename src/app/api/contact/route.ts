@@ -20,8 +20,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // Resend integration lands in a later stage.
-    // For now we accept valid payloads so the UX flow is complete.
+    // Resend will deliver to siteConfig.email (contacto.jeralabs@gmail.com).
     return NextResponse.json({ ok: true });
   } catch {
     return NextResponse.json(
