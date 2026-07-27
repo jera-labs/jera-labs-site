@@ -1,6 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { ContactForm } from "@/components/contact/contact-form";
 import { Container } from "@/components/layout/container";
-import { Link } from "@/i18n/navigation";
 import { createPageMetadata } from "@/lib/metadata";
 import { SectionHeading } from "@/components/shared/section-heading";
 
@@ -16,18 +16,22 @@ export async function generateMetadata({ params }: PageProps) {
 export default async function ContactPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const tNav = await getTranslations("Navigation");
-  const tPlaceholder = await getTranslations("Placeholder");
+  const t = await getTranslations("Contact");
 
   return (
-    <Container className="space-y-6 py-[var(--section-y)]">
-      <SectionHeading title={tNav("contact")} description={tPlaceholder("comingSoon")} />
-      <Link
-        href="/"
-        className="inline-flex text-sm text-tech-teal transition-colors hover:text-ivory-white"
-      >
-        {tPlaceholder("backHome")}
-      </Link>
+    <Container className="py-[var(--section-y)]">
+      <div className="mx-auto max-w-3xl">
+        <SectionHeading
+          as="h1"
+          align="center"
+          title={t("title")}
+          description={t("description")}
+          className="mx-auto"
+        />
+      </div>
+      <div className="mt-10 sm:mt-12">
+        <ContactForm />
+      </div>
     </Container>
   );
 }

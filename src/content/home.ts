@@ -4,6 +4,9 @@ export const homeSections = {
   problemSolutions: "problem-solutions",
   thinkingProcess: "thinking-process",
   capabilities: "capabilities",
+  foundersPreview: "founders",
+  jeraMeaning: "jera-meaning",
+  finalCta: "final-cta",
 } as const;
 
 export const systemProblemItemIds = [
@@ -50,3 +53,7 @@ export const capabilityModuleIds = [
 ] as const;
 
 export type CapabilityModuleId = (typeof capabilityModuleIds)[number];
+
+export const founderIds = ["alejandro", "karla"] as const;
+
+export type FounderId = (typeof founderIds)[number];

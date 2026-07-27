@@ -139,6 +139,58 @@
       "appliedAi": "AI applied to processes"
     }
   },
+  "FoundersPreview": {
+    "title": "Two perspectives. One system.",
+    "description": "Jera Labs is born from the union of development and digital operations.",
+    "bridge": "Together we approach every project from three dimensions: business, experience, and technology.",
+    "cta": "Meet Jera Labs",
+    "founders": {
+      "alejandro": {
+        "name": "Alejandro Lucas",
+        "role": "Product and interface development",
+        "body": "Turns ideas and needs into functional products and interfaces."
+      },
+      "karla": {
+        "name": "Karla Vázquez",
+        "role": "Automation and digital operations",
+        "body": "Connects tools, automates processes, and designs commercial and operational systems."
+      }
+    }
+  },
+  "JeraMeaning": {
+    "title": "Growth is also a system.",
+    "description": "Jera is the Nordic rune associated with harvest, cycles, and results achieved through a constant process. It represents how we understand technology: build solid foundations, improve continuously, and create solutions that can grow with the business."
+  },
+  "FinalCta": {
+    "title": "Tell us what problem you want to solve.",
+    "description": "You don’t need to know which technology to use. Let’s start by understanding the problem and evaluate the best way to approach it together.",
+    "cta": "Let’s talk about your project"
+  },
+  "Contact": {
+    "title": "Let’s talk about your project",
+    "description": "Tell us what you’re trying to solve. We’ll follow up to understand the context and propose a next step.",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "message": "What problem do you want to solve?",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "you@company.com",
+      "companyPlaceholder": "Company name (optional)",
+      "messagePlaceholder": "Share the context, goal, or main friction."
+    },
+    "submit": "Send message",
+    "submitting": "Sending...",
+    "success": "We received your message. We’ll get back to you soon.",
+    "error": "We couldn’t send the message. Please try again in a few minutes.",
+    "validation": {
+      "nameRequired": "Please enter your name.",
+      "emailRequired": "Please enter your email.",
+      "emailInvalid": "Please enter a valid email.",
+      "messageRequired": "Please briefly describe the problem.",
+      "messageMin": "Please write at least 20 characters."
+    }
+  },
   "Placeholder": {
     "backHome": "Back to home",
     "comingSoon": "This page will be part of the next stage of the site."

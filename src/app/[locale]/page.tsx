@@ -1,6 +1,9 @@
 import { setRequestLocale } from "next-intl/server";
 import { Capabilities } from "@/components/home/capabilities";
+import { FinalCta } from "@/components/home/final-cta";
+import { FoundersPreview } from "@/components/home/founders-preview";
 import { Hero } from "@/components/home/hero";
+import { JeraMeaning } from "@/components/home/jera-meaning";
 import { ProblemSolutions } from "@/components/home/problem-solutions";
 import { SystemProblem } from "@/components/home/system-problem";
 import { ThinkingProcess } from "@/components/home/thinking-process";
@@ -26,6 +29,9 @@ export default async function HomePage({ params }: HomePageProps) {
       <ProblemSolutions />
       <ThinkingProcess />
       <Capabilities />
+      <FoundersPreview />
+      <JeraMeaning />
+      <FinalCta />
     </>
   );
 }

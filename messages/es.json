@@ -139,6 +139,58 @@
       "appliedAi": "Inteligencia artificial aplicada a procesos"
     }
   },
+  "FoundersPreview": {
+    "title": "Dos perspectivas. Un mismo sistema.",
+    "description": "Jera Labs nace de la unión de desarrollo y operaciones digitales.",
+    "bridge": "Juntos abordamos cada proyecto desde tres dimensiones: negocio, experiencia y tecnología.",
+    "cta": "Conoce Jera Labs",
+    "founders": {
+      "alejandro": {
+        "name": "Alejandro Lucas",
+        "role": "Desarrollo de productos e interfaces",
+        "body": "Transforma ideas y necesidades en productos e interfaces funcionales."
+      },
+      "karla": {
+        "name": "Karla Vázquez",
+        "role": "Automatización y operaciones digitales",
+        "body": "Conecta herramientas, automatiza procesos y diseña sistemas comerciales y operativos."
+      }
+    }
+  },
+  "JeraMeaning": {
+    "title": "El crecimiento también es un sistema.",
+    "description": "Jera es la runa nórdica asociada con la cosecha, los ciclos y los resultados obtenidos mediante un proceso constante. Representa nuestra forma de entender la tecnología: construir bases sólidas, mejorar de manera continua y crear soluciones que puedan crecer con el negocio."
+  },
+  "FinalCta": {
+    "title": "Cuéntanos qué problema quieres resolver.",
+    "description": "No necesitas saber qué tecnología utilizar. Empecemos por entender el problema y evaluemos juntos la mejor forma de abordarlo.",
+    "cta": "Hablemos de tu proyecto"
+  },
+  "Contact": {
+    "title": "Hablemos de tu proyecto",
+    "description": "Contanos qué estás intentando resolver. Respondemos para entender el contexto y proponer un siguiente paso.",
+    "fields": {
+      "name": "Nombre",
+      "email": "Email",
+      "company": "Empresa",
+      "message": "¿Qué problema querés resolver?",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "tunombre@empresa.com",
+      "companyPlaceholder": "Nombre de la empresa (opcional)",
+      "messagePlaceholder": "Contanos el contexto, el objetivo o la fricción principal."
+    },
+    "submit": "Enviar mensaje",
+    "submitting": "Enviando...",
+    "success": "Recibimos tu mensaje. Te vamos a contactar pronto.",
+    "error": "No pudimos enviar el mensaje. Intentá de nuevo en unos minutos.",
+    "validation": {
+      "nameRequired": "Ingresá tu nombre.",
+      "emailRequired": "Ingresá tu email.",
+      "emailInvalid": "Ingresá un email válido.",
+      "messageRequired": "Contanos brevemente el problema.",
+      "messageMin": "Escribí al menos 20 caracteres."
+    }
+  },
   "Placeholder": {
     "backHome": "Volver al inicio",
     "comingSoon": "Esta página formará parte de la próxima etapa del sitio."
