@@ -98,6 +98,47 @@
       }
     }
   },
+  "ThinkingProcess": {
+    "title": "The solution starts before choosing the technology.",
+    "steps": {
+      "understand": {
+        "title": "Understand",
+        "body": "We grasp the business, its operations, and the real problem."
+      },
+      "analyze": {
+        "title": "Analyze",
+        "body": "We identify causes, dependencies, friction points, and opportunities."
+      },
+      "design": {
+        "title": "Design",
+        "body": "We define a viable, simple solution adapted to the context."
+      },
+      "build": {
+        "title": "Build",
+        "body": "We develop and integrate the required components."
+      },
+      "evolve": {
+        "title": "Evolve",
+        "body": "We measure, learn, and propose improvements when they add value."
+      }
+    }
+  },
+  "Capabilities": {
+    "title": "What we can build together",
+    "description": "Each project may need a different mix of development, automation, and integration.",
+    "modules": {
+      "landingPages": "Landing pages",
+      "institutionalSites": "Institutional websites",
+      "webApps": "Web applications",
+      "mvps": "MVPs",
+      "dashboards": "Dashboards",
+      "internalSystems": "Internal systems",
+      "crmCommercial": "CRM and commercial processes",
+      "automations": "Automations",
+      "integrations": "Integrations and webhooks",
+      "appliedAi": "AI applied to processes"
+    }
+  },
   "Placeholder": {
     "backHome": "Back to home",
     "comingSoon": "This page will be part of the next stage of the site."
