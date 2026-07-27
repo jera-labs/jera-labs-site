@@ -1,0 +1,53 @@
+{
+  "Metadata": {
+    "siteName": "Jera Labs",
+    "home": {
+      "title": "Jera Labs | Digital systems built to grow smarter",
+      "description": "We design digital systems that help companies grow more intelligently. Development, automation, and applied AI."
+    },
+    "whatWeSolve": {
+      "title": "What we solve | Jera Labs",
+      "description": "Operational, integration, and growth problems we can help you solve."
+    },
+    "howWeWork": {
+      "title": "How we work | Jera Labs",
+      "description": "Our approach to understanding your business and designing technology solutions with judgment."
+    },
+    "about": {
+      "title": "About | Jera Labs",
+      "description": "Meet Jera Labs: a technology studio connecting business, marketing, and technology."
+    },
+    "contact": {
+      "title": "Contact | Jera Labs",
+      "description": "Tell us what problem you want to solve. Let’s start by understanding the context."
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "whatWeSolve": "What we solve",
+    "howWeWork": "How we work",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Let’s talk",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "Footer": {
+    "tagline": "TECHNOLOGY · INNOVATION · PURPOSE",
+    "description": "A technology studio designing simple, efficient, and scalable digital systems.",
+    "runeNote": "Jera is the rune of good harvest and cycles that complete.",
+    "rights": "Jera Labs. All rights reserved."
+  },
+  "Hero": {
+    "eyebrow": "TECHNOLOGY · INNOVATION · PURPOSE",
+    "title": "We design digital systems for companies that want to grow more intelligently.",
+    "description": "We combine development, automation, and artificial intelligence to turn complex processes into simple, efficient, and scalable solutions.",
+    "primaryCta": "Let’s talk about your project",
+    "secondaryCta": "See how we work"
+  },
+  "Placeholder": {
+    "backHome": "Back to home",
+    "comingSoon": "This page will be part of the next stage of the site."
+  }
+}

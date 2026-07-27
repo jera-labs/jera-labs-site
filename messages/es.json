@@ -1,0 +1,53 @@
+{
+  "Metadata": {
+    "siteName": "Jera Labs",
+    "home": {
+      "title": "Jera Labs | Sistemas digitales para crecer con inteligencia",
+      "description": "Diseñamos sistemas digitales que ayudan a las empresas a crecer de forma más inteligente. Desarrollo, automatización e inteligencia artificial."
+    },
+    "whatWeSolve": {
+      "title": "Qué resolvemos | Jera Labs",
+      "description": "Problemas de operación, integración y crecimiento que podemos ayudarte a resolver."
+    },
+    "howWeWork": {
+      "title": "Cómo trabajamos | Jera Labs",
+      "description": "Nuestro enfoque para entender el negocio y diseñar soluciones tecnológicas con criterio."
+    },
+    "about": {
+      "title": "Nosotros | Jera Labs",
+      "description": "Conoce a Jera Labs: un estudio tecnológico que conecta negocio, marketing y tecnología."
+    },
+    "contact": {
+      "title": "Contacto | Jera Labs",
+      "description": "Cuéntanos qué problema quieres resolver. Empecemos por entender el contexto."
+    }
+  },
+  "Navigation": {
+    "home": "Inicio",
+    "whatWeSolve": "Qué resolvemos",
+    "howWeWork": "Cómo trabajamos",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "cta": "Hablemos",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "language": "Idioma"
+  },
+  "Footer": {
+    "tagline": "TECNOLOGÍA · INNOVACIÓN · PROPÓSITO",
+    "description": "Estudio tecnológico que diseña sistemas digitales simples, eficientes y escalables.",
+    "runeNote": "Jera es la runa de la buena cosecha y los ciclos que se completan.",
+    "rights": "Jera Labs. Todos los derechos reservados."
+  },
+  "Hero": {
+    "eyebrow": "TECNOLOGÍA · INNOVACIÓN · PROPÓSITO",
+    "title": "Diseñamos sistemas digitales para empresas que quieren crecer de forma más inteligente.",
+    "description": "Combinamos desarrollo, automatización e inteligencia artificial para transformar procesos complejos en soluciones simples, eficientes y escalables.",
+    "primaryCta": "Hablemos de tu proyecto",
+    "secondaryCta": "Descubre cómo trabajamos"
+  },
+  "Placeholder": {
+    "backHome": "Volver al inicio",
+    "comingSoon": "Esta página formará parte de la próxima etapa del sitio."
+  }
+}

@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --deep-graphite: #13181b;
+  --ocean-navy: #0c2b47;
+  --tech-teal: #2ec7c9;
+  --signal-orange: #f15a24;
+  --ivory-white: #f9f8ef;
+  --soft-gray: #e6e9ec;
+  --gunmetal: #2f3438;
+
+  /* Layout rhythm */
+  --header-height: 4.25rem;
+  --page-gutter: 1.25rem;
+  --section-y: 3.5rem;
+  --content-max: 72rem;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --page-gutter: 1.5rem;
+    --section-y: 4.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --page-gutter: 2rem;
+    --section-y: 6.5rem;
+  }
+}
+
+@theme inline {
+  --color-deep-graphite: var(--deep-graphite);
+  --color-ocean-navy: var(--ocean-navy);
+  --color-tech-teal: var(--tech-teal);
+  --color-signal-orange: var(--signal-orange);
+  --color-ivory-white: var(--ivory-white);
+  --color-soft-gray: var(--soft-gray);
+  --color-gunmetal: var(--gunmetal);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-space-grotesk);
+
+  --spacing-header: var(--header-height);
+  --spacing-gutter: var(--page-gutter);
+  --spacing-section: var(--section-y);
+  --max-width-content: var(--content-max);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background-color: var(--deep-graphite);
+    color: var(--ivory-white);
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--tech-teal) 35%, transparent);
+    color: var(--ivory-white);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--tech-teal);
+    outline-offset: 3px;
+  }
+
+  img,
+  svg,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
