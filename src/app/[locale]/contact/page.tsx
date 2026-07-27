@@ -10,8 +10,8 @@ type PageProps = {
 };
 
 export async function generateMetadata({ params }: PageProps) {
-  await params;
-  return createPageMetadata("contact");
+  const { locale } = await params;
+  return createPageMetadata("contact", locale);
 }
 
 export default async function ContactPage({ params }: PageProps) {

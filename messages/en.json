@@ -31,7 +31,8 @@
     "cta": "Let’s talk",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "language": "Language"
+    "language": "Language",
+    "skipToContent": "Skip to content"
   },
   "Footer": {
     "tagline": "TECHNOLOGY · INNOVATION · PURPOSE",
@@ -195,5 +196,13 @@
   "Placeholder": {
     "backHome": "Back to home",
     "comingSoon": "This page will be part of the next stage of the site."
+  },
+  "InternalPages": {
+    "howWeWorkIntro": "We work with a clear method to move from the problem to a useful solution, without locking into a tool upfront.",
+    "aboutClosing": "That perspective guides how we design, build, and evolve every system.",
+    "ctaSupport": "If this resonates with what you’re facing, let’s talk.",
+    "notFoundTitle": "We couldn’t find this page",
+    "notFoundDescription": "The link may have changed, or this route may not exist.",
+    "notFoundCta": "Go to home"
   }
 }

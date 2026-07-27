@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Jera Labs",
-  url: "https://jeralabs.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://jeralabs.com",
   email: "contacto.jeralabs@gmail.com",
 } as const;
 

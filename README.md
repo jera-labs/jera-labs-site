@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jera Labs — sitio institucional
 
-## Getting Started
+Sitio web de [Jera Labs](https://jeralabs.com): estudio tecnológico que conecta negocio, marketing y tecnología.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 (App Router)
+- React 19 + TypeScript
+- Tailwind CSS 4
+- next-intl (ES / EN)
+- Motion + Lucide
+- React Hook Form + Zod
+- Resend (formulario de contacto)
+
+## Desarrollo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrí [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Variables de entorno
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copiá `.env.example` a `.env.local` y completá:
 
-## Learn More
+- `RESEND_API_KEY` — clave de API de Resend
+- `RESEND_FROM_EMAIL` — remitente verificado (o `onboarding@resend.dev` para pruebas)
+- `NEXT_PUBLIC_SITE_URL` — URL pública del sitio
 
-To learn more about Next.js, take a look at the following resources:
+Sin `RESEND_API_KEY`, el formulario acepta envíos en desarrollo (noop) y responde `503` en producción.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+El destino de los mensajes es `contacto.jeralabs@gmail.com`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Scripts
 
-## Deploy on Vercel
+```bash
+pnpm lint
+pnpm build
+pnpm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Despliegue (Vercel)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Importá el repo `jera-labs/jera-labs-site` en Vercel.
+2. Configurá las variables de entorno del proyecto.
+3. Deploy desde `main`.
+
+O con CLI:
+
+```bash
+npx vercel
+```
+
+## Rutas
+
+- `/` — Home
+- `/what-we-solve` — Qué resolvemos
+- `/how-we-work` — Cómo trabajamos
+- `/about` — Nosotros
+- `/contact` — Contacto
+- `/en/...` — variantes en inglés

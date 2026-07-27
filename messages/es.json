@@ -31,7 +31,8 @@
     "cta": "Hablemos",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
-    "language": "Idioma"
+    "language": "Idioma",
+    "skipToContent": "Saltar al contenido"
   },
   "Footer": {
     "tagline": "TECNOLOGÍA · INNOVACIÓN · PROPÓSITO",
@@ -195,5 +196,13 @@
   "Placeholder": {
     "backHome": "Volver al inicio",
     "comingSoon": "Esta página formará parte de la próxima etapa del sitio."
+  },
+  "InternalPages": {
+    "howWeWorkIntro": "Trabajamos con un método claro para pasar del problema a una solución útil, sin atarnos a una herramienta de antemano.",
+    "aboutClosing": "Esa mirada guía cómo diseñamos, construimos y evolucionamos cada sistema.",
+    "ctaSupport": "Si esto resuena con lo que estás enfrentando, conversemos.",
+    "notFoundTitle": "No encontramos esta página",
+    "notFoundDescription": "Es posible que el enlace haya cambiado o que la ruta no exista.",
+    "notFoundCta": "Ir al inicio"
   }
 }

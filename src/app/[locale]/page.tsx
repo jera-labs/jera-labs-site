@@ -14,8 +14,8 @@ type HomePageProps = {
 };
 
 export async function generateMetadata({ params }: HomePageProps) {
-  await params;
-  return createPageMetadata("home");
+  const { locale } = await params;
+  return createPageMetadata("home", locale);
 }
 
 export default async function HomePage({ params }: HomePageProps) {

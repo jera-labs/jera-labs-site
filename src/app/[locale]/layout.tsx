@@ -1,10 +1,12 @@
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { SkipToContent } from "@/components/layout/skip-to-content";
+import { OrganizationJsonLd } from "@/components/seo/organization-json-ld";
 import { routing } from "@/i18n/routing";
 
 const spaceGrotesk = Space_Grotesk({
@@ -40,6 +42,7 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const tNav = await getTranslations("Navigation");
 
   return (
     <html
@@ -47,9 +50,13 @@ export default async function LocaleLayout({
       className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-deep-graphite font-sans text-ivory-white">
+        <OrganizationJsonLd />
         <NextIntlClientProvider messages={messages}>
+          <SkipToContent label={tNav("skipToContent")} />
           <Header />
-          <main className="flex-1">{children}</main>
+          <main id="main-content" className="flex-1">
+            {children}
+          </main>
           <Footer />
         </NextIntlClientProvider>
       </body>
