@@ -46,6 +46,28 @@
     "primaryCta": "Let’s talk about your project",
     "secondaryCta": "See how we work"
   },
+  "SystemProblem": {
+    "title": "Most companies don’t need more tools. They need better systems.",
+    "description": "When processes depend on manual work, scattered information, and disconnected tools, growth becomes slower, more expensive, and harder to manage.",
+    "items": {
+      "manualProcesses": {
+        "from": "Manual processes",
+        "to": "Automated operations"
+      },
+      "disconnectedTools": {
+        "from": "Disconnected tools",
+        "to": "Integrated systems"
+      },
+      "scatteredInfo": {
+        "from": "Scattered information",
+        "to": "Centralized operations"
+      },
+      "unvalidatedIdeas": {
+        "from": "Unvalidated ideas",
+        "to": "Working products"
+      }
+    }
+  },
   "Placeholder": {
     "backHome": "Back to home",
     "comingSoon": "This page will be part of the next stage of the site."

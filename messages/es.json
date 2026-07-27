@@ -46,6 +46,28 @@
     "primaryCta": "Hablemos de tu proyecto",
     "secondaryCta": "Descubre cómo trabajamos"
   },
+  "SystemProblem": {
+    "title": "La mayoría de las empresas no necesitan más herramientas. Necesitan mejores sistemas.",
+    "description": "Cuando los procesos dependen de tareas manuales, información dispersa y herramientas desconectadas, el crecimiento se vuelve más lento, costoso y difícil de gestionar.",
+    "items": {
+      "manualProcesses": {
+        "from": "Procesos manuales",
+        "to": "Operaciones automatizadas"
+      },
+      "disconnectedTools": {
+        "from": "Herramientas desconectadas",
+        "to": "Sistemas integrados"
+      },
+      "scatteredInfo": {
+        "from": "Información dispersa",
+        "to": "Operaciones centralizadas"
+      },
+      "unvalidatedIdeas": {
+        "from": "Ideas sin validar",
+        "to": "Productos funcionales"
+      }
+    }
+  },
   "Placeholder": {
     "backHome": "Volver al inicio",
     "comingSoon": "Esta página formará parte de la próxima etapa del sitio."

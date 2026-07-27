@@ -1,5 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/home/hero";
+import { SystemProblem } from "@/components/home/system-problem";
 import { createPageMetadata } from "@/lib/metadata";
 
 type HomePageProps = {
@@ -15,5 +16,10 @@ export default async function HomePage({ params }: HomePageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <SystemProblem />
+    </>
+  );
 }

@@ -8,6 +8,7 @@ type SectionHeadingProps = {
   align?: "left" | "center";
   className?: string;
   as?: "h1" | "h2" | "h3";
+  id?: string;
 };
 
 export function SectionHeading({
@@ -17,6 +18,7 @@ export function SectionHeading({
   align = "left",
   className,
   as: Tag = "h2",
+  id,
 }: SectionHeadingProps) {
   return (
     <div
@@ -27,7 +29,10 @@ export function SectionHeading({
       )}
     >
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
-      <Tag className="text-balance font-display text-[1.75rem] font-semibold leading-[1.2] tracking-tight text-ivory-white sm:text-4xl sm:leading-[1.15] lg:text-[2.75rem]">
+      <Tag
+        id={id}
+        className="text-balance font-display text-[1.75rem] font-semibold leading-[1.2] tracking-tight text-ivory-white sm:text-4xl sm:leading-[1.15] lg:text-[2.75rem]"
+      >
         {title}
       </Tag>
       {description ? (
