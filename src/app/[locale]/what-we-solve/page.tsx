@@ -3,6 +3,7 @@ import {
   problemSolutionItemIds,
   type ProblemSolutionItemId,
 } from "@/content/home";
+import { problemSolutionIcons } from "@/content/solution-icons";
 import { Container } from "@/components/layout/container";
 import { PageCta } from "@/components/shared/page-cta";
 import { SectionHeading } from "@/components/shared/section-heading";
@@ -37,12 +38,11 @@ export default async function WhatWeSolvePage({ params }: PageProps) {
         />
       </div>
 
-      <ul className="mt-10 grid list-none grid-cols-1 gap-8 p-0 sm:mt-12 md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-        {problemSolutionItemIds.map((id: ProblemSolutionItemId, index) => (
+      <ul className="mt-10 grid list-none grid-cols-1 gap-3 p-0 sm:mt-12 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 lg:gap-5">
+        {problemSolutionItemIds.map((id: ProblemSolutionItemId) => (
           <li key={id} className="min-w-0">
             <SolutionCard
-              index={index + 1}
-              title={t(`items.${id}.title`)}
+              icon={problemSolutionIcons[id]}
               body={t(`items.${id}.body`)}
             />
           </li>

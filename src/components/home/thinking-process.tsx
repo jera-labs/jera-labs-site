@@ -29,22 +29,22 @@ export async function ThinkingProcess() {
           />
         </Reveal>
 
-        <ol className="mx-auto mt-10 max-w-3xl list-none p-0 sm:mt-12 lg:mt-14">
-          {thinkingProcessStepIds.map(
-            (id: ThinkingProcessStepId, index) => (
-              <li key={id}>
-                <Reveal delay={0.04 * (index + 1)}>
+        <Reveal delay={0.08}>
+          <ol className="mt-10 flex list-none flex-col p-0 sm:mt-12 md:mt-14 md:flex-row md:items-start md:gap-0">
+            {thinkingProcessStepIds.map(
+              (id: ThinkingProcessStepId, index) => (
+                <li key={id} className="md:flex md:min-w-0 md:flex-1">
                   <ProcessStep
                     index={index + 1}
                     title={t(`steps.${id}.title`)}
                     body={t(`steps.${id}.body`)}
                     isLast={index === thinkingProcessStepIds.length - 1}
                   />
-                </Reveal>
-              </li>
-            ),
-          )}
-        </ol>
+                </li>
+              ),
+            )}
+          </ol>
+        </Reveal>
       </Container>
     </section>
   );

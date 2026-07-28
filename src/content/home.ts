@@ -39,20 +39,14 @@ export const thinkingProcessStepIds = [
 
 export type ThinkingProcessStepId = (typeof thinkingProcessStepIds)[number];
 
-export const capabilityModuleIds = [
-  "landingPages",
-  "institutionalSites",
-  "webApps",
-  "mvps",
-  "dashboards",
-  "internalSystems",
-  "crmCommercial",
-  "automations",
-  "integrations",
+export const capabilityCategoryIds = [
+  "development",
+  "automation",
+  "integration",
   "appliedAi",
 ] as const;
 
-export type CapabilityModuleId = (typeof capabilityModuleIds)[number];
+export type CapabilityCategoryId = (typeof capabilityCategoryIds)[number];
 
 export const founderIds = ["alejandro", "karla"] as const;
 

@@ -2,8 +2,8 @@
   "Metadata": {
     "siteName": "Jera Labs",
     "home": {
-      "title": "Jera Labs | Sistemas digitales para crecer con inteligencia",
-      "description": "Diseñamos sistemas digitales que ayudan a las empresas a crecer de forma más inteligente. Desarrollo, automatización e inteligencia artificial."
+      "title": "Jera Labs | Desarrollo, automatización e IA para hacer crecer tu negocio",
+      "description": "Desarrollamos y automatizamos los sistemas que hacen crecer tu negocio: sitios, aplicaciones, CRM e integraciones diseñados como un mismo sistema."
     },
     "whatWeSolve": {
       "title": "Qué resolvemos | Jera Labs",
@@ -35,21 +35,21 @@
     "skipToContent": "Saltar al contenido"
   },
   "Footer": {
-    "tagline": "TECNOLOGÍA · INNOVACIÓN · PROPÓSITO",
+    "tagline": "DESARROLLO · AUTOMATIZACIÓN · IA",
     "description": "Estudio tecnológico que diseña sistemas digitales simples, eficientes y escalables.",
     "runeNote": "Jera es la runa de la buena cosecha y los ciclos que se completan.",
     "rights": "Jera Labs. Todos los derechos reservados."
   },
   "Hero": {
-    "eyebrow": "TECNOLOGÍA · INNOVACIÓN · PROPÓSITO",
-    "title": "Diseñamos sistemas digitales para empresas que quieren crecer de forma más inteligente.",
-    "description": "Combinamos desarrollo, automatización e inteligencia artificial para transformar procesos complejos en soluciones simples, eficientes y escalables.",
+    "eyebrow": "DESARROLLO · AUTOMATIZACIÓN · IA",
+    "title": "Desarrollamos y automatizamos los sistemas que hacen crecer tu negocio.",
+    "description": "Sitios web, aplicaciones, CRM y automatizaciones — diseñados como un mismo sistema, no como herramientas sueltas.",
     "primaryCta": "Hablemos de tu proyecto",
     "secondaryCta": "Descubre cómo trabajamos"
   },
   "SystemProblem": {
-    "title": "La mayoría de las empresas no necesitan más herramientas. Necesitan mejores sistemas.",
-    "description": "Cuando los procesos dependen de tareas manuales, información dispersa y herramientas desconectadas, el crecimiento se vuelve más lento, costoso y difícil de gestionar.",
+    "title": "La mayoría de las empresas pierden tiempo y dinero por procesos que nadie diseñó a propósito.",
+    "description": "Herramientas que no se hablan entre sí, seguimiento manual de clientes, información repartida en 5 lugares distintos. No es un problema de falta de tecnología — es un problema de sistema.",
     "items": {
       "manualProcesses": {
         "from": "Procesos manuales",
@@ -74,28 +74,22 @@
     "description": "No partimos de una herramienta específica. Primero entendemos qué está frenando al negocio y después diseñamos la solución adecuada.",
     "items": {
       "repetitiveOps": {
-        "title": "Operaciones repetitivas",
-        "body": "Automatizamos tareas que consumen tiempo y reducen la capacidad del equipo para concentrarse en decisiones importantes."
+        "body": "Automatizamos las tareas repetitivas para que tu equipo se enfoque en lo que requiere criterio."
       },
       "disconnectedSystems": {
-        "title": "Sistemas desconectados",
-        "body": "Integramos herramientas, datos y canales para que la operación funcione como un sistema y no como piezas aisladas."
+        "body": "Integramos tus herramientas para que la operación funcione como un solo sistema."
       },
       "messyCommercial": {
-        "title": "Procesos comerciales desorganizados",
-        "body": "Diseñamos flujos, CRM y automatizaciones que ordenan el seguimiento de prospectos y clientes."
+        "body": "Ordenamos el seguimiento comercial para que ningún prospecto se pierda."
       },
       "ideasToValidate": {
-        "title": "Ideas que necesitan validarse",
-        "body": "Construimos landing pages y MVPs para convertir una idea en una solución funcional que pueda probarse en el mercado."
+        "body": "Convertimos ideas en productos funcionales que pueden probarse en el mercado."
       },
       "hardToUseInfo": {
-        "title": "Información difícil de utilizar",
-        "body": "Creamos dashboards, paneles y sistemas internos que convierten datos dispersos en información clara."
+        "body": "Convertimos datos dispersos en dashboards que sí se usan para decidir."
       },
       "opsLimitedGrowth": {
-        "title": "Crecimiento limitado por la operación",
-        "body": "Optimizamos procesos y arquitectura digital para que la empresa pueda crecer sin multiplicar innecesariamente la complejidad."
+        "body": "Optimizamos procesos y arquitectura para que crecer no multiplique el caos."
       }
     }
   },
@@ -104,67 +98,74 @@
     "steps": {
       "understand": {
         "title": "Entender",
-        "body": "Comprendemos el negocio, su operación y el problema real."
+        "body": "Comprendemos el negocio, la operación y el problema real detrás del síntoma."
       },
       "analyze": {
         "title": "Analizar",
-        "body": "Identificamos causas, dependencias, fricciones y oportunidades."
+        "body": "Identificamos qué depende de qué, y dónde está la fricción real."
       },
       "design": {
         "title": "Diseñar",
-        "body": "Definimos una solución viable, simple y adaptada al contexto."
+        "body": "Definimos una solución simple, viable y adaptada a tu contexto — no la más compleja."
       },
       "build": {
         "title": "Construir",
-        "body": "Desarrollamos e integramos los componentes necesarios."
+        "body": "Desarrollamos e integramos cada pieza como parte de un mismo sistema."
       },
       "evolve": {
         "title": "Evolucionar",
-        "body": "Medimos, aprendemos y proponemos mejoras cuando aportan valor."
+        "body": "Medimos resultados y mejoramos solo cuando aporta valor real."
       }
     }
   },
   "Capabilities": {
     "title": "Lo que podemos construir juntos",
     "description": "Cada proyecto puede necesitar una combinación diferente de desarrollo, automatización e integración.",
-    "modules": {
-      "landingPages": "Landing pages",
-      "institutionalSites": "Sitios institucionales",
-      "webApps": "Aplicaciones web",
-      "mvps": "MVPs",
-      "dashboards": "Dashboards",
-      "internalSystems": "Sistemas internos",
-      "crmCommercial": "CRM y procesos comerciales",
-      "automations": "Automatizaciones",
-      "integrations": "Integraciones y webhooks",
-      "appliedAi": "Inteligencia artificial aplicada a procesos"
+    "categories": {
+      "development": {
+        "title": "Desarrollo",
+        "body": "Sitios, aplicaciones web, MVPs, dashboards."
+      },
+      "automation": {
+        "title": "Automatización",
+        "body": "CRM, procesos comerciales, flujos internos, WhatsApp."
+      },
+      "integration": {
+        "title": "Integración",
+        "body": "APIs, webhooks, conexión entre herramientas."
+      },
+      "appliedAi": {
+        "title": "IA aplicada",
+        "body": "Automatización de procesos con inteligencia artificial."
+      }
     }
   },
   "FoundersPreview": {
     "title": "Dos perspectivas. Un mismo sistema.",
     "description": "Jera Labs nace de la unión de desarrollo y operaciones digitales.",
-    "bridge": "Juntos abordamos cada proyecto desde tres dimensiones: negocio, experiencia y tecnología.",
+    "bridge": "Juntos abordamos cada proyecto desde tres ángulos: negocio, experiencia y tecnología.",
     "cta": "Conoce Jera Labs",
     "founders": {
       "alejandro": {
-        "name": "Alejandro Lucas",
-        "role": "Desarrollo de productos e interfaces",
-        "body": "Transforma ideas y necesidades en productos e interfaces funcionales."
+        "name": "Alejandro",
+        "role": "Desarrollador frontend",
+        "body": "Convierte ideas y necesidades en productos e interfaces funcionales: sitios, aplicaciones, dashboards."
       },
       "karla": {
-        "name": "Karla Vázquez",
-        "role": "Automatización y operaciones digitales",
-        "body": "Conecta herramientas, automatiza procesos y diseña sistemas comerciales y operativos."
+        "name": "Karla",
+        "role": "Especialista en automatización y CRM",
+        "body": "Conecta herramientas, ordena procesos comerciales y diseña sistemas de seguimiento y operación."
       }
     }
   },
   "JeraMeaning": {
     "title": "El crecimiento también es un sistema.",
-    "description": "Jera es la runa nórdica asociada con la cosecha, los ciclos y los resultados obtenidos mediante un proceso constante. Representa nuestra forma de entender la tecnología: construir bases sólidas, mejorar de manera continua y crear soluciones que puedan crecer con el negocio."
+    "description": "Jera es la runa nórdica de la cosecha y los ciclos: el resultado de un proceso constante, no de un atajo.",
+    "closing": "Así entendemos la tecnología: bases sólidas, mejora continua, soluciones que crecen junto con el negocio."
   },
   "FinalCta": {
     "title": "Cuéntanos qué problema quieres resolver.",
-    "description": "No necesitas saber qué tecnología utilizar. Empecemos por entender el problema y evaluemos juntos la mejor forma de abordarlo.",
+    "description": "No necesitas saber qué tecnología usar. Empezamos por entender el problema.",
     "cta": "Hablemos de tu proyecto"
   },
   "Contact": {

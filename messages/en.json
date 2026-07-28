@@ -2,8 +2,8 @@
   "Metadata": {
     "siteName": "Jera Labs",
     "home": {
-      "title": "Jera Labs | Digital systems built to grow smarter",
-      "description": "We design digital systems that help companies grow more intelligently. Development, automation, and applied AI."
+      "title": "Jera Labs | Development, automation and AI to grow your business",
+      "description": "We develop and automate the systems that grow your business: websites, apps, CRM and integrations designed as one system."
     },
     "whatWeSolve": {
       "title": "What we solve | Jera Labs",
@@ -35,21 +35,21 @@
     "skipToContent": "Skip to content"
   },
   "Footer": {
-    "tagline": "TECHNOLOGY · INNOVATION · PURPOSE",
+    "tagline": "DEVELOPMENT · AUTOMATION · AI",
     "description": "A technology studio designing simple, efficient, and scalable digital systems.",
     "runeNote": "Jera is the rune of good harvest and cycles that complete.",
     "rights": "Jera Labs. All rights reserved."
   },
   "Hero": {
-    "eyebrow": "TECHNOLOGY · INNOVATION · PURPOSE",
-    "title": "We design digital systems for companies that want to grow more intelligently.",
-    "description": "We combine development, automation, and artificial intelligence to turn complex processes into simple, efficient, and scalable solutions.",
+    "eyebrow": "DEVELOPMENT · AUTOMATION · AI",
+    "title": "We develop and automate the systems that grow your business.",
+    "description": "Websites, applications, CRM, and automations — designed as one system, not as disconnected tools.",
     "primaryCta": "Let’s talk about your project",
     "secondaryCta": "See how we work"
   },
   "SystemProblem": {
-    "title": "Most companies don’t need more tools. They need better systems.",
-    "description": "When processes depend on manual work, scattered information, and disconnected tools, growth becomes slower, more expensive, and harder to manage.",
+    "title": "Most companies waste time and money on processes nobody designed on purpose.",
+    "description": "Tools that don’t talk to each other, manual customer follow-up, information scattered across five places. It’s not a lack of technology — it’s a system problem.",
     "items": {
       "manualProcesses": {
         "from": "Manual processes",
@@ -74,28 +74,22 @@
     "description": "We don’t start from a specific tool. First we understand what’s holding the business back, then we design the right solution.",
     "items": {
       "repetitiveOps": {
-        "title": "Repetitive operations",
-        "body": "We automate tasks that consume time and reduce the team’s capacity to focus on important decisions."
+        "body": "We automate repetitive tasks so your team can focus on what requires judgment."
       },
       "disconnectedSystems": {
-        "title": "Disconnected systems",
-        "body": "We integrate tools, data, and channels so operations work as a system instead of isolated pieces."
+        "body": "We integrate your tools so operations work as one system."
       },
       "messyCommercial": {
-        "title": "Disorganized commercial processes",
-        "body": "We design flows, CRM, and automations that organize prospect and customer follow-up."
+        "body": "We organize commercial follow-up so no prospect gets lost."
       },
       "ideasToValidate": {
-        "title": "Ideas that need validation",
-        "body": "We build landing pages and MVPs to turn an idea into a working solution that can be tested in the market."
+        "body": "We turn ideas into working products that can be tested in the market."
       },
       "hardToUseInfo": {
-        "title": "Information that’s hard to use",
-        "body": "We create dashboards, panels, and internal systems that turn scattered data into clear information."
+        "body": "We turn scattered data into dashboards people actually use to decide."
       },
       "opsLimitedGrowth": {
-        "title": "Growth limited by operations",
-        "body": "We optimize processes and digital architecture so the company can grow without unnecessarily multiplying complexity."
+        "body": "We optimize processes and architecture so growth doesn’t multiply chaos."
       }
     }
   },
@@ -104,67 +98,74 @@
     "steps": {
       "understand": {
         "title": "Understand",
-        "body": "We grasp the business, its operations, and the real problem."
+        "body": "We grasp the business, the operations, and the real problem behind the symptom."
       },
       "analyze": {
         "title": "Analyze",
-        "body": "We identify causes, dependencies, friction points, and opportunities."
+        "body": "We identify what depends on what, and where the real friction is."
       },
       "design": {
         "title": "Design",
-        "body": "We define a viable, simple solution adapted to the context."
+        "body": "We define a simple, viable solution adapted to your context — not the most complex one."
       },
       "build": {
         "title": "Build",
-        "body": "We develop and integrate the required components."
+        "body": "We develop and integrate every piece as part of the same system."
       },
       "evolve": {
         "title": "Evolve",
-        "body": "We measure, learn, and propose improvements when they add value."
+        "body": "We measure results and improve only when it adds real value."
       }
     }
   },
   "Capabilities": {
     "title": "What we can build together",
     "description": "Each project may need a different mix of development, automation, and integration.",
-    "modules": {
-      "landingPages": "Landing pages",
-      "institutionalSites": "Institutional websites",
-      "webApps": "Web applications",
-      "mvps": "MVPs",
-      "dashboards": "Dashboards",
-      "internalSystems": "Internal systems",
-      "crmCommercial": "CRM and commercial processes",
-      "automations": "Automations",
-      "integrations": "Integrations and webhooks",
-      "appliedAi": "AI applied to processes"
+    "categories": {
+      "development": {
+        "title": "Development",
+        "body": "Websites, web apps, MVPs, dashboards."
+      },
+      "automation": {
+        "title": "Automation",
+        "body": "CRM, commercial processes, internal flows, WhatsApp."
+      },
+      "integration": {
+        "title": "Integration",
+        "body": "APIs, webhooks, connections between tools."
+      },
+      "appliedAi": {
+        "title": "Applied AI",
+        "body": "Process automation powered by artificial intelligence."
+      }
     }
   },
   "FoundersPreview": {
     "title": "Two perspectives. One system.",
     "description": "Jera Labs is born from the union of development and digital operations.",
-    "bridge": "Together we approach every project from three dimensions: business, experience, and technology.",
+    "bridge": "Together we approach every project from three angles: business, experience, and technology.",
     "cta": "Meet Jera Labs",
     "founders": {
       "alejandro": {
-        "name": "Alejandro Lucas",
-        "role": "Product and interface development",
-        "body": "Turns ideas and needs into functional products and interfaces."
+        "name": "Alejandro",
+        "role": "Frontend developer",
+        "body": "Turns ideas and needs into functional products and interfaces: websites, apps, dashboards."
       },
       "karla": {
-        "name": "Karla Vázquez",
-        "role": "Automation and digital operations",
-        "body": "Connects tools, automates processes, and designs commercial and operational systems."
+        "name": "Karla",
+        "role": "Automation and CRM specialist",
+        "body": "Connects tools, organizes commercial processes, and designs follow-up and operations systems."
       }
     }
   },
   "JeraMeaning": {
     "title": "Growth is also a system.",
-    "description": "Jera is the Nordic rune associated with harvest, cycles, and results achieved through a constant process. It represents how we understand technology: build solid foundations, improve continuously, and create solutions that can grow with the business."
+    "description": "Jera is the Nordic rune of harvest and cycles: the result of a constant process, not a shortcut.",
+    "closing": "That’s how we understand technology: solid foundations, continuous improvement, solutions that grow with the business."
   },
   "FinalCta": {
     "title": "Tell us what problem you want to solve.",
-    "description": "You don’t need to know which technology to use. Let’s start by understanding the problem and evaluate the best way to approach it together.",
+    "description": "You don’t need to know which technology to use. We start by understanding the problem.",
     "cta": "Let’s talk about your project"
   },
   "Contact": {

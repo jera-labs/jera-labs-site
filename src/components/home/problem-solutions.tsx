@@ -4,6 +4,7 @@ import {
   problemSolutionItemIds,
   type ProblemSolutionItemId,
 } from "@/content/home";
+import { problemSolutionIcons } from "@/content/solution-icons";
 import { Container } from "@/components/layout/container";
 import { Reveal } from "@/components/shared/reveal";
 import { SectionHeading } from "@/components/shared/section-heading";
@@ -30,14 +31,13 @@ export async function ProblemSolutions() {
           />
         </Reveal>
 
-        <ul className="mt-10 grid list-none grid-cols-1 gap-8 p-0 sm:mt-12 md:grid-cols-2 md:gap-x-8 md:gap-y-10 lg:mt-14 lg:gap-x-10">
+        <ul className="mt-10 grid list-none grid-cols-1 gap-3 p-0 sm:mt-12 sm:grid-cols-2 sm:gap-4 lg:mt-14 lg:grid-cols-3 lg:gap-5">
           {problemSolutionItemIds.map(
             (id: ProblemSolutionItemId, index) => (
               <li key={id} className="min-w-0">
                 <Reveal delay={0.04 * (index + 1)} className="h-full">
                   <SolutionCard
-                    index={index + 1}
-                    title={t(`items.${id}.title`)}
+                    icon={problemSolutionIcons[id]}
                     body={t(`items.${id}.body`)}
                   />
                 </Reveal>

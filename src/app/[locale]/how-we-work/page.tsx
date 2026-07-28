@@ -37,9 +37,9 @@ export default async function HowWeWorkPage({ params }: PageProps) {
         />
       </div>
 
-      <ol className="mx-auto mt-10 max-w-3xl list-none p-0 sm:mt-12">
+      <ol className="mt-10 flex list-none flex-col p-0 sm:mt-12 md:flex-row md:items-start">
         {thinkingProcessStepIds.map((id: ThinkingProcessStepId, index) => (
-          <li key={id}>
+          <li key={id} className="md:flex md:min-w-0 md:flex-1">
             <ProcessStep
               index={index + 1}
               title={t(`steps.${id}.title`)}

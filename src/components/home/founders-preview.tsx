@@ -1,10 +1,14 @@
 import { getTranslations } from "next-intl/server";
-import { company } from "@/content/company";
 import { founderIds, homeSections } from "@/content/home";
 import { Container } from "@/components/layout/container";
 import { PrimaryButton } from "@/components/shared/primary-button";
 import { Reveal } from "@/components/shared/reveal";
 import { SectionHeading } from "@/components/shared/section-heading";
+
+const founderInitials = {
+  alejandro: "AL",
+  karla: "KA",
+} as const;
 
 export async function FoundersPreview() {
   const t = await getTranslations("FoundersPreview");
@@ -28,14 +32,17 @@ export async function FoundersPreview() {
         </Reveal>
 
         <ul className="mt-10 grid list-none grid-cols-1 gap-6 p-0 sm:mt-12 md:grid-cols-2 md:gap-8">
-          {founderIds.map((id, index) => {
-            const founder = company.founders.find((item) => item.id === id);
-            if (!founder) return null;
-
-            return (
-              <li key={id}>
-                <Reveal delay={0.05 * (index + 1)}>
-                  <article className="h-full border-t border-soft-gray/10 pt-5 sm:pt-6">
+          {founderIds.map((id, index) => (
+            <li key={id}>
+              <Reveal delay={0.05 * (index + 1)}>
+                <article className="flex h-full gap-4 border-t border-soft-gray/10 pt-5 sm:gap-5 sm:pt-6">
+                  <span
+                    aria-hidden
+                    className="flex h-12 w-12 shrink-0 items-center justify-center border border-tech-teal/30 font-display text-sm font-semibold tracking-wide text-tech-teal"
+                  >
+                    {founderInitials[id]}
+                  </span>
+                  <div className="min-w-0">
                     <p className="font-display text-xl font-semibold tracking-tight text-ivory-white">
                       {t(`founders.${id}.name`)}
                     </p>
@@ -45,11 +52,11 @@ export async function FoundersPreview() {
                     <p className="mt-3 text-sm leading-relaxed text-soft-gray/80 sm:text-base">
                       {t(`founders.${id}.body`)}
                     </p>
-                  </article>
-                </Reveal>
-              </li>
-            );
-          })}
+                  </div>
+                </article>
+              </Reveal>
+            </li>
+          ))}
         </ul>
 
         <Reveal delay={0.16} className="mx-auto mt-8 max-w-2xl text-center sm:mt-10">
