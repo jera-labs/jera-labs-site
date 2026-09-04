@@ -17,7 +17,7 @@ export function SolutionCard({
   return (
     <article
       className={cn(
-        "group flex h-full flex-col gap-3 border border-soft-gray/10 bg-ocean-navy/20 p-5 transition-colors duration-300 hover:border-tech-teal/30 hover:bg-ocean-navy/35 sm:gap-4 sm:p-6 motion-reduce:transition-none",
+        "hover-lift surface-card group flex h-full flex-col gap-3 bg-ocean-navy/20 p-5 hover:border-tech-teal/30 hover:bg-ocean-navy/35 sm:gap-4 sm:p-6",
         className,
       )}
     >

@@ -8,6 +8,10 @@ export function OrganizationJsonLd() {
     url: siteConfig.url,
     email: siteConfig.email,
     logo: `${siteConfig.url}/brand/jera-mark.png`,
+    image: `${siteConfig.url}/opengraph-image`,
+    sameAs: [],
+    description:
+      "Software Studio that builds digital systems connecting technology, processes, and data.",
   };
 
   return (

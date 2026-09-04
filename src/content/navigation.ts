@@ -1,14 +1,24 @@
-import type { AppPathname, NavItemId } from "@/types";
+import { homeSections } from "@/content/home";
+import type { NavItemId } from "@/types";
 
 export type NavigationItem = {
   id: NavItemId;
-  href: AppPathname;
+  hash: string;
   labelKey: NavItemId;
 };
 
+/** One-page nav: scrolls to Home sections */
 export const navigationItems: NavigationItem[] = [
-  { id: "home", href: "/", labelKey: "home" },
-  { id: "whatWeSolve", href: "/what-we-solve", labelKey: "whatWeSolve" },
-  { id: "howWeWork", href: "/how-we-work", labelKey: "howWeWork" },
-  { id: "about", href: "/about", labelKey: "about" },
+  { id: "home", hash: homeSections.hero, labelKey: "home" },
+  {
+    id: "whatWeSolve",
+    hash: homeSections.problemSolutions,
+    labelKey: "whatWeSolve",
+  },
+  {
+    id: "howWeWork",
+    hash: homeSections.thinkingProcess,
+    labelKey: "howWeWork",
+  },
+  { id: "about", hash: homeSections.foundersPreview, labelKey: "about" },
 ];

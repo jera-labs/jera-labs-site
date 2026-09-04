@@ -14,6 +14,10 @@
   --page-gutter: 1.25rem;
   --section-y: 3.5rem;
   --content-max: 90rem;
+
+  /* Soft corners — cards & controls */
+  --radius-soft: 0.625rem;
+  --radius-control: 0.5rem;
 }
 
 @media (min-width: 640px) {
@@ -97,6 +101,16 @@
     max-width: 100%;
     height: auto;
   }
+
+  section[id] {
+    scroll-margin-top: calc(var(--header-height) + 0.75rem);
+  }
+
+  a[href],
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
 }
 
 @layer utilities {
@@ -108,57 +122,80 @@
     text-wrap: pretty;
   }
 
-  /* Section atmospheres — very subtle brand washes */
+  /* Flat alternating surfaces — same vibe, no loud gradients */
   .section-surface {
     position: relative;
-    isolation: isolate;
   }
 
   .section-surface-base {
-    background:
-      radial-gradient(
-        ellipse 100% 80% at 0% 0%,
-        color-mix(in srgb, var(--ocean-navy) 14%, transparent) 0%,
-        transparent 70%
-      ),
-      var(--deep-graphite);
+    background-color: var(--deep-graphite);
   }
 
   .section-surface-navy {
-    background:
-      linear-gradient(
-        180deg,
-        color-mix(in srgb, var(--ocean-navy) 18%, var(--deep-graphite)) 0%,
-        var(--deep-graphite) 100%
-      );
+    background-color: color-mix(
+      in srgb,
+      var(--ocean-navy) 14%,
+      var(--deep-graphite)
+    );
   }
 
   .section-surface-glow {
-    background:
-      radial-gradient(
-        ellipse 90% 70% at 50% 0%,
-        color-mix(in srgb, var(--tech-teal) 4%, transparent) 0%,
-        transparent 65%
-      ),
-      var(--deep-graphite);
+    background-color: var(--deep-graphite);
   }
 
   .section-surface-warm {
-    background:
-      radial-gradient(
-        ellipse 80% 60% at 90% 15%,
-        color-mix(in srgb, var(--signal-orange) 3%, transparent) 0%,
-        transparent 60%
-      ),
-      var(--deep-graphite);
+    background-color: color-mix(
+      in srgb,
+      var(--ocean-navy) 9%,
+      var(--deep-graphite)
+    );
   }
 
   .section-surface-deep {
-    background:
-      linear-gradient(
-        180deg,
-        color-mix(in srgb, var(--ocean-navy) 22%, var(--deep-graphite)) 0%,
-        var(--deep-graphite) 100%
-      );
+    background-color: color-mix(
+      in srgb,
+      var(--ocean-navy) 24%,
+      var(--deep-graphite)
+    );
+  }
+
+  /* Micro-interactions — only real hover pointers, never touch sticky-hover */
+  .hover-lift {
+    transition:
+      transform 0.25s ease,
+      border-color 0.25s ease,
+      background-color 0.25s ease;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .hover-lift:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hover-lift,
+    .hover-lift:hover {
+      transition: none;
+      transform: none;
+    }
+  }
+
+  .rounded-soft {
+    border-radius: var(--radius-soft);
+  }
+
+  .surface-card {
+    border-radius: var(--radius-soft);
+    border: 1px solid color-mix(in srgb, var(--soft-gray) 10%, transparent);
+  }
+
+  .chip-tag {
+    border-radius: 9999px;
+    background-color: color-mix(in srgb, var(--gunmetal) 85%, var(--deep-graphite));
+    padding: 0.3rem 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1.35;
+    color: color-mix(in srgb, var(--soft-gray) 88%, transparent);
   }
 }

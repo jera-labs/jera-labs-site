@@ -14,11 +14,11 @@ export async function ExperienceStats() {
   return (
     <section
       id={homeSections.experienceStats}
-      className="section-surface section-surface-glow relative"
+      className="section-surface section-surface-navy relative"
       aria-labelledby="experience-stats-heading"
     >
       <Container className="py-[var(--section-y)]">
-        <Reveal className="mx-auto max-w-3xl">
+        <Reveal className="mx-auto max-w-3xl text-center">
           <SectionHeading
             id="experience-stats-heading"
             as="h2"
@@ -26,17 +26,26 @@ export async function ExperienceStats() {
             title={t("title")}
             className="mx-auto"
           />
+          <p className="mt-4 text-pretty text-sm leading-relaxed text-soft-gray/85 sm:text-base">
+            {t("closing")}
+          </p>
         </Reveal>
 
-        <ul className="mt-10 grid w-full list-none grid-cols-1 gap-4 p-0 sm:mt-12 sm:grid-cols-3 sm:gap-5 lg:gap-6">
+        <ul className="mx-auto mt-10 grid max-w-4xl list-none grid-cols-1 gap-4 p-0 sm:mt-12 sm:grid-cols-3 sm:gap-5">
           {experienceStatIds.map((id: ExperienceStatId, index) => (
             <li key={id} className="min-w-0">
               <Reveal delay={0.05 * (index + 1)} className="h-full">
-                <article className="flex h-full flex-col items-center justify-center border border-soft-gray/10 bg-ocean-navy/25 px-6 py-10 text-center backdrop-blur-[2px] sm:px-8 sm:py-12 lg:py-14">
-                  <p className="text-balance font-display text-3xl font-semibold leading-tight tracking-tight text-tech-teal sm:text-4xl">
+                <article className="surface-card hover-lift flex h-full min-h-[7.5rem] flex-col justify-center bg-ocean-navy/20 px-5 py-6 text-center sm:min-h-[8rem] sm:px-6 sm:py-7">
+                  <p
+                    className={
+                      id === "areas"
+                        ? "text-balance font-display text-base font-semibold leading-snug tracking-tight text-tech-teal sm:text-lg"
+                        : "font-display text-2xl font-semibold tracking-tight text-tech-teal sm:text-[1.65rem]"
+                    }
+                  >
                     {t(`stats.${id}.value`)}
                   </p>
-                  <p className="mt-3 text-pretty text-sm leading-snug text-soft-gray/85 sm:mt-4 sm:text-base">
+                  <p className="mt-2 text-pretty text-xs leading-relaxed text-soft-gray/80 sm:text-sm">
                     {t(`stats.${id}.label`)}
                   </p>
                 </article>
@@ -44,12 +53,6 @@ export async function ExperienceStats() {
             </li>
           ))}
         </ul>
-
-        <Reveal delay={0.2} className="mx-auto mt-10 max-w-3xl text-center sm:mt-12">
-          <p className="text-pretty text-sm leading-relaxed text-soft-gray/85 sm:text-base">
-            {t("closing")}
-          </p>
-        </Reveal>
       </Container>
     </section>
   );

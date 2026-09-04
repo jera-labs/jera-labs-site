@@ -19,7 +19,7 @@ export function TransformationRow({
   return (
     <div
       className={cn(
-        "group flex flex-col gap-2 border-b border-soft-gray/10 py-5 sm:flex-row sm:items-center sm:gap-4 sm:py-5",
+        "group flex flex-col gap-2 border-b border-soft-gray/10 py-5 transition-colors duration-300 hover:border-tech-teal/20 sm:flex-row sm:items-center sm:gap-4 sm:py-5 motion-reduce:transition-none",
         className,
       )}
     >

@@ -1,6 +1,17 @@
 {
   "Metadata": {
     "siteName": "Jera Labs",
+    "ogImageAlt": "Jera Labs — Software Studio. Sistemas digitales para negocios.",
+    "keywords": [
+      "Jera Labs",
+      "Software Studio",
+      "desarrollo web",
+      "automatización",
+      "integraciones",
+      "CRM",
+      "IA aplicada",
+      "sistemas digitales"
+    ],
     "home": {
       "title": "Jera Labs | Software Studio — Sistemas digitales que hacen trabajar mejor a tu negocio",
       "description": "Diseñamos y construimos soluciones digitales que conectan tecnología, procesos y datos: desarrollo, automatización, integración e IA aplicada."

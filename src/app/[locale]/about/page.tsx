@@ -1,15 +1,10 @@
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { founderIds } from "@/content/home";
+import { founderIds, founderPhotos } from "@/content/home";
 import { Container } from "@/components/layout/container";
 import { PageCta } from "@/components/shared/page-cta";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { createPageMetadata } from "@/lib/metadata";
-
-const founderInitials = {
-  alejandro: "AL",
-  karla: "KV",
-} as const;
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -45,32 +40,38 @@ export default async function AboutPage({ params }: PageProps) {
       </div>
 
       <ul className="mt-10 grid list-none grid-cols-1 gap-6 p-0 sm:mt-12 md:grid-cols-2 md:gap-8">
-        {founderIds.map((id) => (
-          <li key={id}>
-            <article className="flex h-full gap-4 border-t border-soft-gray/10 pt-5 sm:gap-5 sm:pt-6">
-              <span
-                aria-hidden
-                className="flex h-12 w-12 shrink-0 items-center justify-center border border-tech-teal/30 font-display text-sm font-semibold tracking-wide text-tech-teal"
-              >
-                {founderInitials[id]}
-              </span>
-              <div className="min-w-0">
-                <p className="font-display text-xl font-semibold tracking-tight text-ivory-white">
-                  {tFounders(`founders.${id}.name`)}
-                </p>
-                <p className="mt-1 text-sm font-medium text-tech-teal">
-                  {tFounders(`founders.${id}.role`)}
-                </p>
-                <p className="mt-2 text-sm text-soft-gray/90">
-                  {tFounders(`founders.${id}.focus`)}
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-soft-gray/80 sm:text-base">
-                  {tFounders(`founders.${id}.body`)}
-                </p>
-              </div>
-            </article>
-          </li>
-        ))}
+        {founderIds.map((id) => {
+          const name = tFounders(`founders.${id}.name`);
+          return (
+            <li key={id}>
+              <article className="flex h-full gap-4 border-t border-soft-gray/10 pt-5 sm:gap-5 sm:pt-6">
+                <div className="relative h-16 w-16 shrink-0 overflow-hidden border border-soft-gray/15 sm:h-20 sm:w-20">
+                  <Image
+                    src={founderPhotos[id]}
+                    alt={name}
+                    fill
+                    className="object-cover object-top"
+                    sizes="80px"
+                  />
+                </div>
+                <div className="min-w-0">
+                  <p className="font-display text-xl font-semibold tracking-tight text-ivory-white">
+                    {name}
+                  </p>
+                  <p className="mt-1 text-sm font-medium text-tech-teal">
+                    {tFounders(`founders.${id}.role`)}
+                  </p>
+                  <p className="mt-2 text-sm text-soft-gray/90">
+                    {tFounders(`founders.${id}.focus`)}
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-soft-gray/80 sm:text-base">
+                    {tFounders(`founders.${id}.body`)}
+                  </p>
+                </div>
+              </article>
+            </li>
+          );
+        })}
       </ul>
 
       <div className="mx-auto mt-14 max-w-3xl border-t border-soft-gray/10 pt-10 text-center sm:mt-16 sm:pt-12">

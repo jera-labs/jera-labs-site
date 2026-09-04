@@ -1,8 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import { navigationItems } from "@/content/navigation";
-import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/container";
 import { Logo } from "@/components/shared/logo";
+import { SectionAnchor } from "@/components/shared/section-anchor";
 import { siteConfig } from "@/lib/constants";
 
 export async function Footer() {
@@ -11,7 +11,7 @@ export async function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto border-t border-soft-gray/10 bg-ocean-navy/40">
+    <footer className="mt-auto border-t border-soft-gray/10 bg-ocean-navy/30">
       <Container className="grid gap-8 py-10 sm:gap-10 sm:py-12 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
         <div className="min-w-0 space-y-3 sm:space-y-4">
           <Logo size="md" />
@@ -39,13 +39,13 @@ export async function Footer() {
             aria-label="Footer"
           >
             {navigationItems.map((item) => (
-              <Link
+              <SectionAnchor
                 key={item.id}
-                href={item.href}
+                hash={item.hash}
                 className="text-sm text-soft-gray/85 transition-colors hover:text-ivory-white"
               >
                 {tNav(item.labelKey)}
-              </Link>
+              </SectionAnchor>
             ))}
           </nav>
           <p className="max-w-sm text-sm leading-relaxed text-soft-gray/70">

@@ -2,7 +2,7 @@
 
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
-import { routing, type Locale } from "@/i18n/routing";
+import { type Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 type LocaleSwitcherProps = {
@@ -11,39 +11,42 @@ type LocaleSwitcherProps = {
 };
 
 export function LocaleSwitcher({ className, label }: LocaleSwitcherProps) {
-  const locale = useLocale();
+  const locale = useLocale() as Locale;
   const pathname = usePathname();
   const router = useRouter();
-
-  function switchLocale(nextLocale: Locale) {
-    router.replace(pathname, { locale: nextLocale });
-  }
+  const nextLocale: Locale = locale === "es" ? "en" : "es";
 
   return (
-    <div
-      className={cn("inline-flex items-center gap-1", className)}
-      role="group"
-      aria-label={label}
+    <button
+      type="button"
+      onClick={() => router.replace(pathname, { locale: nextLocale })}
+      className={cn(
+        "inline-flex min-h-9 cursor-pointer items-center gap-1.5 rounded-full bg-gunmetal/70 px-3.5 py-1.5 text-xs font-medium uppercase tracking-[0.12em] transition-colors duration-200 hover:bg-gunmetal active:scale-[0.98] motion-reduce:active:scale-100",
+        className,
+      )}
+      aria-label={`${label}: ${locale.toUpperCase()} → ${nextLocale.toUpperCase()}`}
     >
-      {routing.locales.map((item) => {
-        const isActive = item === locale;
-        return (
-          <button
-            key={item}
-            type="button"
-            onClick={() => switchLocale(item)}
-            className={cn(
-              "rounded-sm px-2 py-1 text-xs font-medium uppercase tracking-wide transition-colors",
-              isActive
-                ? "text-tech-teal"
-                : "text-soft-gray/70 hover:text-ivory-white",
-            )}
-            aria-pressed={isActive}
-          >
-            {item}
-          </button>
-        );
-      })}
-    </div>
+      <span
+        className={cn(
+          "transition-colors duration-200",
+          locale === "es" ? "text-tech-teal" : "text-soft-gray/55",
+        )}
+        aria-hidden
+      >
+        ES
+      </span>
+      <span className="text-soft-gray/35" aria-hidden>
+        /
+      </span>
+      <span
+        className={cn(
+          "transition-colors duration-200",
+          locale === "en" ? "text-tech-teal" : "text-soft-gray/55",
+        )}
+        aria-hidden
+      >
+        EN
+      </span>
+    </button>
   );
 }

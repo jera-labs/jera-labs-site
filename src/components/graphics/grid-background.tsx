@@ -25,8 +25,8 @@ export function GridBackground({ className }: GridBackgroundProps) {
             "radial-gradient(ellipse 55% 50% at 30% 40%, black 10%, transparent 72%)",
         }}
       />
-      <div className="absolute left-[-10%] top-[35%] h-64 w-64 rounded-full bg-ocean-navy/40 blur-3xl" />
-      <div className="absolute right-[-5%] top-[20%] h-72 w-72 rounded-full bg-tech-teal/[0.07] blur-3xl" />
+      <div className="absolute left-[-10%] top-[35%] h-56 w-56 rounded-full bg-ocean-navy/40 blur-3xl sm:h-64 sm:w-64 motion-safe:animate-[pulse_10s_ease-in-out_infinite]" />
+      <div className="absolute right-[-5%] top-[20%] h-60 w-60 rounded-full bg-tech-teal/[0.07] blur-3xl sm:h-72 sm:w-72 motion-safe:animate-[pulse_12s_ease-in-out_infinite]" />
     </div>
   );
 }

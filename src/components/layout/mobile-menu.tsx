@@ -4,8 +4,8 @@ import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
 import { navigationItems } from "@/content/navigation";
-import { Link } from "@/i18n/navigation";
 import { PrimaryButton } from "@/components/shared/primary-button";
+import { SectionAnchor } from "@/components/shared/section-anchor";
 import { LocaleSwitcher } from "./locale-switcher";
 import { getWhatsAppUrl } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -13,9 +13,10 @@ import { cn } from "@/lib/utils";
 type MobileMenuProps = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  className?: string;
 };
 
-export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
+export function MobileMenu({ open, onOpenChange, className }: MobileMenuProps) {
   const t = useTranslations("Navigation");
   const tWhatsApp = useTranslations("WhatsApp");
 
@@ -37,10 +38,10 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
   }, [open, onOpenChange]);
 
   return (
-    <div className="lg:hidden">
+    <div className={cn("lg:hidden", className)}>
       <button
         type="button"
-        className="relative z-50 inline-flex h-11 w-11 items-center justify-center rounded-sm text-ivory-white"
+        className="relative z-50 inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-[var(--radius-control)] text-ivory-white"
         aria-expanded={open}
         aria-controls="mobile-navigation"
         aria-label={open ? t("closeMenu") : t("openMenu")}
@@ -51,7 +52,7 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
 
       <div
         className={cn(
-          "fixed inset-0 z-40 bg-deep-graphite/60 backdrop-blur-[2px] transition-opacity",
+          "fixed inset-0 z-40 bg-deep-graphite/60 backdrop-blur-[2px] transition-opacity duration-300 motion-reduce:transition-none",
           open ? "opacity-100" : "pointer-events-none opacity-0",
         )}
         aria-hidden={!open}
@@ -64,10 +65,10 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
         aria-modal="true"
         aria-hidden={!open}
         className={cn(
-          "fixed inset-x-0 top-header z-40 max-h-[calc(100dvh-var(--header-height))] overflow-y-auto border-b border-soft-gray/10 bg-deep-graphite/98 shadow-[0_16px_40px_rgba(0,0,0,0.35)] backdrop-blur-md transition-[transform,opacity] duration-200",
+          "fixed inset-x-0 top-header z-40 max-h-[calc(100dvh-var(--header-height))] overflow-y-auto border-b border-soft-gray/10 bg-deep-graphite/98 shadow-[0_16px_40px_rgba(0,0,0,0.35)] backdrop-blur-md transition-[transform,opacity] duration-300 ease-out motion-reduce:transition-none",
           open
             ? "translate-y-0 opacity-100"
-            : "pointer-events-none -translate-y-2 opacity-0",
+            : "pointer-events-none -translate-y-3 opacity-0",
         )}
       >
         <nav
@@ -75,14 +76,14 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
           aria-label="Mobile"
         >
           {navigationItems.map((item) => (
-            <Link
+            <SectionAnchor
               key={item.id}
-              href={item.href}
-              className="rounded-sm px-3 py-3.5 text-base text-soft-gray transition-colors hover:bg-ocean-navy/50 hover:text-ivory-white active:bg-ocean-navy/60"
-              onClick={() => onOpenChange(false)}
+              hash={item.hash}
+              className="cursor-pointer rounded-[var(--radius-control)] px-3 py-3.5 text-base text-soft-gray transition-colors hover:bg-ocean-navy/50 hover:text-ivory-white active:bg-ocean-navy/60"
+              onNavigate={() => onOpenChange(false)}
             >
               {t(item.labelKey)}
-            </Link>
+            </SectionAnchor>
           ))}
 
           <div className="mt-3 flex flex-col gap-4 border-t border-soft-gray/10 pt-4 sm:flex-row sm:items-center sm:justify-between">

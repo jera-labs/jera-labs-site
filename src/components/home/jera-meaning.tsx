@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { homeSections } from "@/content/home";
 import { Container } from "@/components/layout/container";
 import { Reveal } from "@/components/shared/reveal";
 import { SectionHeading } from "@/components/shared/section-heading";
@@ -10,7 +9,7 @@ export async function JeraMeaning() {
 
   return (
     <section
-      id={homeSections.jeraMeaning}
+      id="jera-meaning"
       className="section-surface section-surface-deep relative overflow-hidden"
       aria-labelledby="jera-meaning-heading"
     >

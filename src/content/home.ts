@@ -5,10 +5,8 @@ export const homeSections = {
   capabilities: "capabilities",
   experienceStats: "experience-stats",
   thinkingProcess: "thinking-process",
-  projectsExperience: "projects-experience",
-  whyJera: "why-jera",
+  perspective: "perspective",
   foundersPreview: "founders",
-  jeraMeaning: "jera-meaning",
   finalCta: "final-cta",
 } as const;
 
@@ -54,6 +52,11 @@ export type CapabilityCategoryId = (typeof capabilityCategoryIds)[number];
 export const founderIds = ["alejandro", "karla"] as const;
 
 export type FounderId = (typeof founderIds)[number];
+
+export const founderPhotos: Record<FounderId, string> = {
+  alejandro: "/team/alejandro.jpg",
+  karla: "/team/karla.jpg",
+};
 
 export const experienceStatIds = [
   "projects",

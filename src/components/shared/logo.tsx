@@ -45,7 +45,7 @@ export function Logo({
       href="/"
       onClick={onClick}
       className={cn(
-        "inline-flex items-center text-ivory-white transition-opacity hover:opacity-90",
+        "inline-flex items-center text-ivory-white transition-opacity hover:opacity-90 cursor-pointer",
         s.gapClass,
         className,
       )}

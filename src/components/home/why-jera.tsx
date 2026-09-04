@@ -1,5 +1,4 @@
 import { getTranslations } from "next-intl/server";
-import { homeSections } from "@/content/home";
 import { Container } from "@/components/layout/container";
 import { Reveal } from "@/components/shared/reveal";
 import { SectionHeading } from "@/components/shared/section-heading";
@@ -9,7 +8,7 @@ export async function WhyJera() {
 
   return (
     <section
-      id={homeSections.whyJera}
+      id="why-jera"
       className="section-surface section-surface-warm relative"
       aria-labelledby="why-jera-heading"
     >
