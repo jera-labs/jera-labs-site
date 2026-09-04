@@ -43,6 +43,7 @@ export default async function WhatWeSolvePage({ params }: PageProps) {
           <li key={id} className="min-w-0">
             <SolutionCard
               icon={problemSolutionIcons[id]}
+              title={t(`items.${id}.title`)}
               body={t(`items.${id}.body`)}
             />
           </li>
@@ -52,7 +53,7 @@ export default async function WhatWeSolvePage({ params }: PageProps) {
       <PageCta
         title={tCta("title")}
         description={tPage("ctaSupport")}
-        ctaLabel={tCta("cta")}
+        ctaLabel={tCta("alejandro.cta")}
       />
     </Container>
   );

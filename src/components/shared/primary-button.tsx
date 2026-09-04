@@ -15,10 +15,22 @@ type ButtonAsButton = BaseProps &
     href?: undefined;
   };
 
-type ButtonAsLink = BaseProps & {
+type ButtonAsInternalLink = BaseProps & {
   href: AppPathname;
+  external?: false;
   onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 };
+
+type ButtonAsExternalLink = BaseProps & {
+  href: string;
+  external: true;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
+};
+
+export type PrimaryButtonProps =
+  | ButtonAsButton
+  | ButtonAsInternalLink
+  | ButtonAsExternalLink;
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
@@ -32,13 +44,31 @@ const variantClasses: Record<ButtonVariant, string> = {
 const baseClasses =
   "inline-flex min-h-11 items-center justify-center gap-2 rounded-sm px-5 py-2.5 text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tech-teal focus-visible:ring-offset-2 focus-visible:ring-offset-deep-graphite disabled:pointer-events-none disabled:opacity-50";
 
-export function PrimaryButton(props: ButtonAsButton | ButtonAsLink) {
+export function PrimaryButton(props: PrimaryButtonProps) {
   const { children, className, variant = "primary" } = props;
   const classes = cn(baseClasses, variantClasses[variant], className);
 
   if ("href" in props && props.href) {
+    if (props.external) {
+      return (
+        <a
+          href={props.href}
+          className={classes}
+          onClick={props.onClick}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
+      );
+    }
+
     return (
-      <Link href={props.href} className={classes} onClick={props.onClick}>
+      <Link
+        href={props.href}
+        className={classes}
+        onClick={props.onClick}
+      >
         {children}
       </Link>
     );

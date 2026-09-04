@@ -7,6 +7,7 @@ import { navigationItems } from "@/content/navigation";
 import { Link } from "@/i18n/navigation";
 import { PrimaryButton } from "@/components/shared/primary-button";
 import { LocaleSwitcher } from "./locale-switcher";
+import { getWhatsAppUrl } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 type MobileMenuProps = {
@@ -16,6 +17,7 @@ type MobileMenuProps = {
 
 export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
   const t = useTranslations("Navigation");
+  const tWhatsApp = useTranslations("WhatsApp");
 
   useEffect(() => {
     if (!open) return;
@@ -69,7 +71,7 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
         )}
       >
         <nav
-          className="mx-auto flex w-full max-w-content flex-col gap-1 px-[var(--page-gutter)] py-4 pb-[max(1rem,env(safe-area-inset-bottom))]"
+          className="mx-auto flex w-full flex-col gap-1 px-[var(--page-gutter)] py-4 pb-[max(1rem,env(safe-area-inset-bottom))]"
           aria-label="Mobile"
         >
           {navigationItems.map((item) => (
@@ -86,7 +88,8 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
           <div className="mt-3 flex flex-col gap-4 border-t border-soft-gray/10 pt-4 sm:flex-row sm:items-center sm:justify-between">
             <LocaleSwitcher label={t("language")} />
             <PrimaryButton
-              href="/contact"
+              href={getWhatsAppUrl("alejandro", tWhatsApp("prefillAlejandro"))}
+              external
               className="w-full sm:w-auto sm:min-w-[10rem]"
               onClick={() => onOpenChange(false)}
             >

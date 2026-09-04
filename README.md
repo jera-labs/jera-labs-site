@@ -1,6 +1,6 @@
 # Jera Labs — sitio institucional
 
-Sitio web de [Jera Labs](https://jeralabs.com): estudio tecnológico que conecta negocio, marketing y tecnología.
+Sitio web de [Jera Labs](https://jeralabs.io): Software Studio que construye sistemas digitales para negocios.
 
 ## Stack
 
@@ -9,8 +9,6 @@ Sitio web de [Jera Labs](https://jeralabs.com): estudio tecnológico que conecta
 - Tailwind CSS 4
 - next-intl (ES / EN)
 - Motion + Lucide
-- React Hook Form + Zod
-- Resend (formulario de contacto)
 
 ## Desarrollo
 
@@ -25,13 +23,7 @@ Abrí [http://localhost:3000](http://localhost:3000).
 
 Copiá `.env.example` a `.env.local` y completá:
 
-- `RESEND_API_KEY` — clave de API de Resend
-- `RESEND_FROM_EMAIL` — remitente verificado (o `onboarding@resend.dev` para pruebas)
-- `NEXT_PUBLIC_SITE_URL` — URL pública del sitio
-
-Sin `RESEND_API_KEY`, el formulario acepta envíos en desarrollo (noop) y responde `503` en producción.
-
-El destino de los mensajes es `contacto.jeralabs@gmail.com`.
+- `NEXT_PUBLIC_SITE_URL` — URL pública del sitio (sin barra final), p. ej. `https://jeralabs.io`
 
 ## Scripts
 
@@ -44,14 +36,8 @@ pnpm start
 ## Despliegue (Vercel)
 
 1. Importá el repo `jera-labs/jera-labs-site` en Vercel.
-2. Configurá las variables de entorno del proyecto.
-3. Deploy desde `main`.
-
-O con CLI:
-
-```bash
-npx vercel
-```
+2. Configurá `NEXT_PUBLIC_SITE_URL`.
+3. Deploy desde `main` con la cuenta GitHub **jera-labs**.
 
 ## Rutas
 
@@ -59,5 +45,6 @@ npx vercel
 - `/what-we-solve` — Qué resolvemos
 - `/how-we-work` — Cómo trabajamos
 - `/about` — Nosotros
-- `/contact` — Contacto
 - `/en/...` — variantes en inglés
+
+Los CTAs “Hablemos / Let’s talk” abren WhatsApp (Alejandro). El CTA final ofrece conversar con Karla o Alejandro. El email queda en footer y en el CTA final.

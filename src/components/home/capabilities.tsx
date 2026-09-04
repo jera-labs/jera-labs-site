@@ -17,13 +17,20 @@ const categoryIcons: Record<CapabilityCategoryId, LucideIcon> = {
   appliedAi: Sparkles,
 };
 
+function splitItems(items: string) {
+  return items
+    .split("·")
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
 export async function Capabilities() {
   const t = await getTranslations("Capabilities");
 
   return (
     <section
       id={homeSections.capabilities}
-      className="relative border-b border-soft-gray/10"
+      className="section-surface section-surface-navy relative"
       aria-labelledby="capabilities-heading"
     >
       <Container className="py-[var(--section-y)]">
@@ -38,24 +45,36 @@ export async function Capabilities() {
           />
         </Reveal>
 
-        <ul className="mt-10 grid list-none grid-cols-1 gap-3 p-0 sm:mt-12 sm:grid-cols-2 sm:gap-4 lg:mt-14 lg:grid-cols-4 lg:gap-5">
+        <ul className="mt-10 grid list-none grid-cols-1 gap-4 p-0 sm:mt-12 sm:grid-cols-2 sm:gap-5 lg:mt-14 lg:gap-6">
           {capabilityCategoryIds.map((id, index) => {
             const Icon = categoryIcons[id];
+            const items = splitItems(t(`categories.${id}.items`));
+
             return (
               <li key={id} className="min-w-0">
                 <Reveal delay={0.04 * (index + 1)} className="h-full">
-                  <article className="group flex h-full flex-col gap-4 border border-soft-gray/10 bg-ocean-navy/20 p-5 transition-colors duration-300 hover:border-tech-teal/30 hover:bg-ocean-navy/35 sm:p-6 motion-reduce:transition-none">
+                  <article className="group flex h-full min-h-[14rem] flex-col gap-4 border border-soft-gray/10 bg-ocean-navy/20 p-6 transition-colors duration-300 hover:border-tech-teal/30 hover:bg-ocean-navy/35 sm:min-h-[16rem] sm:p-7 lg:p-8 motion-reduce:transition-none">
                     <Icon
-                      className="h-5 w-5 text-tech-teal"
+                      className="h-6 w-6 text-tech-teal"
                       strokeWidth={1.75}
                       aria-hidden
                     />
-                    <h3 className="font-display text-lg font-semibold tracking-tight text-ivory-white">
+                    <h3 className="font-display text-xl font-semibold tracking-tight text-ivory-white sm:text-2xl">
                       {t(`categories.${id}.title`)}
                     </h3>
-                    <p className="text-sm leading-relaxed text-soft-gray/80">
+                    <p className="text-pretty text-sm leading-relaxed text-soft-gray/80 sm:text-base">
                       {t(`categories.${id}.body`)}
                     </p>
+                    <ul className="mt-auto flex list-none flex-wrap gap-2 p-0 pt-2">
+                      {items.map((item) => (
+                        <li
+                          key={item}
+                          className="border border-tech-teal/25 px-2.5 py-1 text-xs leading-snug text-tech-teal sm:text-[0.8rem]"
+                        >
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
                   </article>
                 </Reveal>
               </li>

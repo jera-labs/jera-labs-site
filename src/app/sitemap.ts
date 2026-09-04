@@ -2,14 +2,14 @@ import type { MetadataRoute } from "next";
 import { getPathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/lib/constants";
+import type { AppPathname } from "@/types";
 
-const paths = [
+const paths: AppPathname[] = [
   "/",
   "/what-we-solve",
   "/how-we-work",
   "/about",
-  "/contact",
-] as const;
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();

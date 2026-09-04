@@ -13,7 +13,7 @@
   --header-height: 4.25rem;
   --page-gutter: 1.25rem;
   --section-y: 3.5rem;
-  --content-max: 72rem;
+  --content-max: 90rem;
 }
 
 @media (min-width: 640px) {
@@ -46,6 +46,12 @@
   --spacing-gutter: var(--page-gutter);
   --spacing-section: var(--section-y);
   --max-width-content: var(--content-max);
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --page-gutter: 2.5rem;
+  }
 }
 
 @layer base {
@@ -100,5 +106,59 @@
 
   .text-pretty {
     text-wrap: pretty;
+  }
+
+  /* Section atmospheres — very subtle brand washes */
+  .section-surface {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .section-surface-base {
+    background:
+      radial-gradient(
+        ellipse 100% 80% at 0% 0%,
+        color-mix(in srgb, var(--ocean-navy) 14%, transparent) 0%,
+        transparent 70%
+      ),
+      var(--deep-graphite);
+  }
+
+  .section-surface-navy {
+    background:
+      linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--ocean-navy) 18%, var(--deep-graphite)) 0%,
+        var(--deep-graphite) 100%
+      );
+  }
+
+  .section-surface-glow {
+    background:
+      radial-gradient(
+        ellipse 90% 70% at 50% 0%,
+        color-mix(in srgb, var(--tech-teal) 4%, transparent) 0%,
+        transparent 65%
+      ),
+      var(--deep-graphite);
+  }
+
+  .section-surface-warm {
+    background:
+      radial-gradient(
+        ellipse 80% 60% at 90% 15%,
+        color-mix(in srgb, var(--signal-orange) 3%, transparent) 0%,
+        transparent 60%
+      ),
+      var(--deep-graphite);
+  }
+
+  .section-surface-deep {
+    background:
+      linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--ocean-navy) 22%, var(--deep-graphite)) 0%,
+        var(--deep-graphite) 100%
+      );
   }
 }

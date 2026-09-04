@@ -10,10 +10,10 @@ import {
 import type { ProblemSolutionItemId } from "@/content/home";
 
 export const problemSolutionIcons: Record<ProblemSolutionItemId, LucideIcon> = {
-  repetitiveOps: Repeat,
-  disconnectedSystems: Link2,
-  messyCommercial: Users,
-  ideasToValidate: Rocket,
-  hardToUseInfo: BarChart3,
-  opsLimitedGrowth: TrendingUp,
+  manualRepetitive: Repeat,
+  disconnectedTools: Link2,
+  disorganizedCustomer: Users,
+  hardToScale: TrendingUp,
+  digitalExperiences: Rocket,
+  lackOfVisibility: BarChart3,
 };

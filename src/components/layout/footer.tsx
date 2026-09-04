@@ -16,7 +16,10 @@ export async function Footer() {
         <div className="min-w-0 space-y-3 sm:space-y-4">
           <Logo size="md" />
           <p className="text-[0.65rem] font-medium uppercase tracking-[0.16em] text-tech-teal sm:text-xs sm:tracking-[0.2em]">
-            {tFooter("tagline")}
+            {tFooter("positioning")}
+          </p>
+          <p className="text-xs text-soft-gray/75 sm:text-sm">
+            {tFooter("pillars")}
           </p>
           <p className="max-w-md text-sm leading-relaxed text-soft-gray/85">
             {tFooter("description")}
@@ -27,6 +30,7 @@ export async function Footer() {
           >
             {siteConfig.email}
           </a>
+          <p className="text-sm text-soft-gray/60">{siteConfig.domainLabel}</p>
         </div>
 
         <div className="min-w-0 space-y-4">

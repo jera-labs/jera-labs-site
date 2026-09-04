@@ -32,7 +32,7 @@ export default async function HowWeWorkPage({ params }: PageProps) {
           as="h1"
           align="center"
           title={t("title")}
-          description={tPage("howWeWorkIntro")}
+          description={t("description")}
           className="mx-auto"
         />
       </div>
@@ -53,7 +53,7 @@ export default async function HowWeWorkPage({ params }: PageProps) {
       <PageCta
         title={tCta("title")}
         description={tPage("ctaSupport")}
-        ctaLabel={tCta("cta")}
+        ctaLabel={tCta("alejandro.cta")}
       />
     </Container>
   );

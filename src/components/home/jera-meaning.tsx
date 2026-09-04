@@ -11,7 +11,7 @@ export async function JeraMeaning() {
   return (
     <section
       id={homeSections.jeraMeaning}
-      className="relative overflow-hidden border-b border-soft-gray/10 bg-ocean-navy"
+      className="section-surface section-surface-deep relative overflow-hidden"
       aria-labelledby="jera-meaning-heading"
     >
       <Container className="relative py-[var(--section-y)]">

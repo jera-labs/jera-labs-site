@@ -7,7 +7,7 @@ import { SectionHeading } from "@/components/shared/section-heading";
 
 const founderInitials = {
   alejandro: "AL",
-  karla: "KA",
+  karla: "KV",
 } as const;
 
 export async function FoundersPreview() {
@@ -16,7 +16,7 @@ export async function FoundersPreview() {
   return (
     <section
       id={homeSections.foundersPreview}
-      className="relative border-b border-soft-gray/10"
+      className="section-surface section-surface-navy relative"
       aria-labelledby="founders-heading"
     >
       <Container className="py-[var(--section-y)]">
@@ -29,6 +29,12 @@ export async function FoundersPreview() {
             description={t("description")}
             className="mx-auto"
           />
+        </Reveal>
+
+        <Reveal delay={0.06} className="mx-auto mt-6 max-w-2xl text-center sm:mt-8">
+          <p className="text-sm leading-relaxed text-soft-gray/85 sm:text-base">
+            {t("bridge")}
+          </p>
         </Reveal>
 
         <ul className="mt-10 grid list-none grid-cols-1 gap-6 p-0 sm:mt-12 md:grid-cols-2 md:gap-8">
@@ -46,8 +52,11 @@ export async function FoundersPreview() {
                     <p className="font-display text-xl font-semibold tracking-tight text-ivory-white">
                       {t(`founders.${id}.name`)}
                     </p>
-                    <p className="mt-2 text-sm font-medium text-tech-teal">
+                    <p className="mt-1 text-sm font-medium text-tech-teal">
                       {t(`founders.${id}.role`)}
+                    </p>
+                    <p className="mt-2 text-sm text-soft-gray/90">
+                      {t(`founders.${id}.focus`)}
                     </p>
                     <p className="mt-3 text-sm leading-relaxed text-soft-gray/80 sm:text-base">
                       {t(`founders.${id}.body`)}
@@ -59,13 +68,8 @@ export async function FoundersPreview() {
           ))}
         </ul>
 
-        <Reveal delay={0.16} className="mx-auto mt-8 max-w-2xl text-center sm:mt-10">
-          <p className="text-sm leading-relaxed text-soft-gray/85 sm:text-base">
-            {t("bridge")}
-          </p>
-          <div className="mt-6 flex justify-center">
-            <PrimaryButton href="/about">{t("cta")}</PrimaryButton>
-          </div>
+        <Reveal delay={0.16} className="mt-8 flex justify-center sm:mt-10">
+          <PrimaryButton href="/about">{t("cta")}</PrimaryButton>
         </Reveal>
       </Container>
     </section>

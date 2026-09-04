@@ -2,24 +2,20 @@
   "Metadata": {
     "siteName": "Jera Labs",
     "home": {
-      "title": "Jera Labs | Development, automation and AI to grow your business",
-      "description": "We develop and automate the systems that grow your business: websites, apps, CRM and integrations designed as one system."
+      "title": "Jera Labs | Software Studio — Digital systems that make businesses work better",
+      "description": "We design and build digital solutions that connect technology, processes, and data: development, automation, integration, and applied AI."
     },
     "whatWeSolve": {
       "title": "What we solve | Jera Labs",
-      "description": "Operational, integration, and growth problems we can help you solve."
+      "description": "Business problems we help solve with digital systems — from disconnected tools to processes that are hard to scale."
     },
     "howWeWork": {
       "title": "How we work | Jera Labs",
-      "description": "Our approach to understanding your business and designing technology solutions with judgment."
+      "description": "A clear process from the problem to a working solution: diagnosis, proposal, implementation, testing, and delivery."
     },
     "about": {
-      "title": "About | Jera Labs",
-      "description": "Meet Jera Labs: a technology studio connecting business, marketing, and technology."
-    },
-    "contact": {
-      "title": "Contact | Jera Labs",
-      "description": "Tell us what problem you want to solve. Let’s start by understanding the context."
+      "title": "Who we are | Jera Labs",
+      "description": "Jera Labs was founded around a simple idea: development and automation work better when they are designed together."
     }
   },
   "Navigation": {
@@ -27,7 +23,6 @@
     "whatWeSolve": "What we solve",
     "howWeWork": "How we work",
     "about": "About",
-    "contact": "Contact",
     "cta": "Let’s talk",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -35,15 +30,17 @@
     "skipToContent": "Skip to content"
   },
   "Footer": {
-    "tagline": "DEVELOPMENT · AUTOMATION · AI",
-    "description": "A technology studio designing simple, efficient, and scalable digital systems.",
+    "positioning": "Software Studio",
+    "pillars": "Development · Automation · Integration · Applied AI",
+    "description": "We build digital systems that make businesses work better.",
     "runeNote": "Jera is the rune of good harvest and cycles that complete.",
     "rights": "Jera Labs. All rights reserved."
   },
   "Hero": {
-    "eyebrow": "DEVELOPMENT · AUTOMATION · AI",
-    "title": "We develop and automate the systems that grow your business.",
-    "description": "Websites, applications, CRM, and automations — designed as one system, not as disconnected tools.",
+    "eyebrow": "SOFTWARE STUDIO",
+    "title": "We build digital systems that make businesses work better.",
+    "pillars": "Development · Automation · Integration · Applied AI",
+    "description": "We design and build digital solutions that connect technology, processes, and data to create simpler, more efficient, and scalable operations.",
     "primaryCta": "Let’s talk about your project",
     "secondaryCta": "See how we work"
   },
@@ -70,91 +67,134 @@
     }
   },
   "ProblemSolutions": {
-    "title": "Problems we can help you solve",
-    "description": "We don’t start from a specific tool. First we understand what’s holding the business back, then we design the right solution.",
+    "title": "What we solve",
+    "description": "Technology should simplify your operation, not add more complexity. We help businesses solve problems such as:",
     "items": {
-      "repetitiveOps": {
-        "body": "We automate repetitive tasks so your team can focus on what requires judgment."
+      "manualRepetitive": {
+        "title": "Manual and repetitive processes",
+        "body": "We turn repetitive tasks into automated workflows that save time and reduce operational friction."
       },
-      "disconnectedSystems": {
-        "body": "We integrate your tools so operations work as one system."
+      "disconnectedTools": {
+        "title": "Disconnected tools",
+        "body": "We connect platforms, systems, and data so your technology works as one ecosystem."
       },
-      "messyCommercial": {
-        "body": "We organize commercial follow-up so no prospect gets lost."
+      "disorganizedCustomer": {
+        "title": "Disorganized customer management",
+        "body": "We implement CRM systems that centralize leads, customers, conversations, and commercial processes."
       },
-      "ideasToValidate": {
-        "body": "We turn ideas into working products that can be tested in the market."
+      "hardToScale": {
+        "title": "Processes that are difficult to scale",
+        "body": "We build digital systems and automations designed to support growth without multiplying manual work."
       },
-      "hardToUseInfo": {
-        "body": "We turn scattered data into dashboards people actually use to decide."
+      "digitalExperiences": {
+        "title": "Digital experiences that need improvement",
+        "body": "We develop websites, web applications, landing pages, and interfaces built around real business needs."
       },
-      "opsLimitedGrowth": {
-        "body": "We optimize processes and architecture so growth doesn’t multiply chaos."
-      }
-    }
-  },
-  "ThinkingProcess": {
-    "title": "The solution starts before choosing the technology.",
-    "steps": {
-      "understand": {
-        "title": "Understand",
-        "body": "We grasp the business, the operations, and the real problem behind the symptom."
-      },
-      "analyze": {
-        "title": "Analyze",
-        "body": "We identify what depends on what, and where the real friction is."
-      },
-      "design": {
-        "title": "Design",
-        "body": "We define a simple, viable solution adapted to your context — not the most complex one."
-      },
-      "build": {
-        "title": "Build",
-        "body": "We develop and integrate every piece as part of the same system."
-      },
-      "evolve": {
-        "title": "Evolve",
-        "body": "We measure results and improve only when it adds real value."
+      "lackOfVisibility": {
+        "title": "Lack of visibility and reliable data",
+        "body": "We implement tracking and data flows that help businesses understand what is happening across their digital ecosystem."
       }
     }
   },
   "Capabilities": {
-    "title": "What we can build together",
-    "description": "Each project may need a different mix of development, automation, and integration.",
+    "title": "What we build",
+    "description": "Four capabilities. Combined as one system for your business.",
     "categories": {
       "development": {
         "title": "Development",
-        "body": "Websites, web apps, MVPs, dashboards."
+        "body": "Digital products and experiences built around real business needs.",
+        "items": "Websites · Landing Pages · Web Apps · MVPs · Dashboards · Custom Frontend Development"
       },
       "automation": {
         "title": "Automation",
-        "body": "CRM, commercial processes, internal flows, WhatsApp."
+        "body": "Systems that reduce repetitive work and improve how businesses operate.",
+        "items": "CRM Implementation · Commercial Workflows · Internal Processes · Email · WhatsApp · Customer Journeys"
       },
       "integration": {
         "title": "Integration",
-        "body": "APIs, webhooks, connections between tools."
+        "body": "We connect the tools your business already uses so information can move automatically between them.",
+        "items": "APIs · Webhooks · CRM Integrations · Payment Platforms · Forms · Calendars · Marketing Tools"
       },
       "appliedAi": {
         "title": "Applied AI",
-        "body": "Process automation powered by artificial intelligence."
+        "body": "We integrate AI into real processes where it can improve efficiency, response times, and operations.",
+        "items": "AI Assistants · AI-powered Workflows · Process Automation · AI Integrations"
       }
     }
   },
+  "ExperienceStats": {
+    "title": "Experience behind Jera Labs",
+    "closing": "Jera Labs brings together technical development and business automation to build solutions that work beyond the interface.",
+    "stats": {
+      "projects": {
+        "value": "+15",
+        "label": "Projects developed"
+      },
+      "years": {
+        "value": "+10",
+        "label": "Years of combined experience"
+      },
+      "areas": {
+        "value": "Marketing + Development",
+        "label": "Strategy meets technology."
+      }
+    }
+  },
+  "ThinkingProcess": {
+    "title": "How we work",
+    "description": "A clear process from the problem to a working solution.",
+    "steps": {
+      "diagnosis": {
+        "title": "Diagnosis",
+        "body": "We understand your business, the problem you need to solve, your current processes, and the technology you already use."
+      },
+      "proposal": {
+        "title": "Proposal",
+        "body": "We define the solution, scope, technologies, implementation plan, and deliverables."
+      },
+      "implementation": {
+        "title": "Implementation",
+        "body": "We develop, configure, automate, and integrate the systems required for the project."
+      },
+      "testing": {
+        "title": "Testing",
+        "body": "We test the solution, integrations, workflows, and critical scenarios before launch."
+      },
+      "deliverySupport": {
+        "title": "Delivery & Support",
+        "body": "We deploy the solution, document what was implemented, and provide the support required for a smooth transition."
+      }
+    }
+  },
+  "ProjectsExperience": {
+    "title": "Projects & Experience",
+    "description": "Jera Labs may be a new studio, but the experience behind it isn’t.",
+    "body": "Together, we’ve worked on more than 15 projects involving development, CRM implementation, automation, integrations, digital operations, and technology infrastructure.",
+    "closing": "Today, we bring that experience together under Jera Labs to build better digital systems for businesses."
+  },
+  "WhyJera": {
+    "title": "More than isolated tools",
+    "lead": "A website, a CRM, an automation, or an AI solution shouldn’t exist in isolation.",
+    "body": "We look at the entire digital ecosystem behind a business and build solutions that connect technology with the way the company actually operates.",
+    "closing": "That means fewer disconnected tools, less manual work, better information flow, and technology that can evolve with the business."
+  },
   "FoundersPreview": {
-    "title": "Two perspectives. One system.",
-    "description": "Jera Labs is born from the union of development and digital operations.",
-    "bridge": "Together we approach every project from three angles: business, experience, and technology.",
+    "title": "Who we are",
+    "description": "Jera Labs was founded around a simple idea: development and automation work better when they are designed together.",
+    "bridge": "We combine two complementary areas of expertise to build digital solutions that are technically solid, operationally useful, and designed around how a business actually works.",
     "cta": "Meet Jera Labs",
     "founders": {
       "alejandro": {
-        "name": "Alejandro",
-        "role": "Frontend developer",
-        "body": "Turns ideas and needs into functional products and interfaces: websites, apps, dashboards."
+        "name": "Alejandro Lucas",
+        "role": "Co-Founder",
+        "focus": "Senior Frontend Developer · Applied AI",
+        "body": "5 years of experience building frontend applications, digital products, and technology solutions."
       },
       "karla": {
-        "name": "Karla",
-        "role": "Automation and CRM specialist",
-        "body": "Connects tools, organizes commercial processes, and designs follow-up and operations systems."
+        "name": "Karla Vázquez",
+        "role": "Co-Founder",
+        "focus": "Automation & CRM Specialist",
+        "body": "6 years of experience building CRM systems, automations, funnels, integrations, and digital operations."
       }
     }
   },
@@ -164,42 +204,23 @@
     "closing": "That’s how we understand technology: solid foundations, continuous improvement, solutions that grow with the business."
   },
   "FinalCta": {
-    "title": "Tell us what problem you want to solve.",
-    "description": "You don’t need to know which technology to use. We start by understanding the problem.",
-    "cta": "Let’s talk about your project"
-  },
-  "Contact": {
     "title": "Let’s talk about your project",
-    "description": "Tell us what you’re trying to solve. We’ll follow up to understand the context and propose a next step.",
-    "fields": {
-      "name": "Name",
-      "email": "Email",
-      "company": "Company",
-      "message": "What problem do you want to solve?",
-      "namePlaceholder": "Your name",
-      "emailPlaceholder": "you@company.com",
-      "companyPlaceholder": "Company name (optional)",
-      "messagePlaceholder": "Share the context, goal, or main friction."
+    "description": "You don’t need to know exactly what technology you need. Tell us what you want to build, improve, automate, or solve, and we’ll help you define the right approach.",
+    "karla": {
+      "cta": "Talk to Karla",
+      "focus": "Automation · CRM · Integrations"
     },
-    "submit": "Send message",
-    "submitting": "Sending...",
-    "success": "We received your message. We’ll get back to you soon.",
-    "error": "We couldn’t send the message. Please try again in a few minutes.",
-    "orEmail": "You can also email us at",
-    "validation": {
-      "nameRequired": "Please enter your name.",
-      "emailRequired": "Please enter your email.",
-      "emailInvalid": "Please enter a valid email.",
-      "messageRequired": "Please briefly describe the problem.",
-      "messageMin": "Please write at least 20 characters."
+    "alejandro": {
+      "cta": "Talk to Alejandro",
+      "focus": "Development · Applied AI"
     }
   },
-  "Placeholder": {
-    "backHome": "Back to home",
-    "comingSoon": "This page will be part of the next stage of the site."
+  "WhatsApp": {
+    "prefillAlejandro": "Hi, I'd like to learn more about Jera Labs and talk about my project.",
+    "prefillKarla": "Hi, I'd like to learn more about Jera Labs and talk about my project."
   },
   "InternalPages": {
-    "howWeWorkIntro": "We work with a clear method to move from the problem to a useful solution, without locking into a tool upfront.",
+    "howWeWorkIntro": "A clear process from the problem to a working solution.",
     "aboutClosing": "That perspective guides how we design, build, and evolve every system.",
     "ctaSupport": "If this resonates with what you’re facing, let’s talk.",
     "notFoundTitle": "We couldn’t find this page",

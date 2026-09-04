@@ -2,21 +2,16 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { getPathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import type { AppPathname } from "@/types";
 import { siteConfig } from "./constants";
 
-type MetadataPageKey =
-  | "home"
-  | "whatWeSolve"
-  | "howWeWork"
-  | "about"
-  | "contact";
+type MetadataPageKey = "home" | "whatWeSolve" | "howWeWork" | "about";
 
-const pagePathByKey: Record<MetadataPageKey, "/" | "/what-we-solve" | "/how-we-work" | "/about" | "/contact"> = {
+const pagePathByKey: Record<MetadataPageKey, AppPathname> = {
   home: "/",
   whatWeSolve: "/what-we-solve",
   howWeWork: "/how-we-work",
   about: "/about",
-  contact: "/contact",
 };
 
 export async function createPageMetadata(

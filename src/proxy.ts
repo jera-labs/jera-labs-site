@@ -9,7 +9,6 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  // Exclude /api so contact and other route handlers are not i18n-rewritten.
   matcher: [
     "/",
     "/(es|en)/:path*",

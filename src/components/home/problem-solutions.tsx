@@ -16,7 +16,7 @@ export async function ProblemSolutions() {
   return (
     <section
       id={homeSections.problemSolutions}
-      className="relative border-b border-soft-gray/10"
+      className="section-surface section-surface-base relative"
       aria-labelledby="problem-solutions-heading"
     >
       <Container className="py-[var(--section-y)]">
@@ -38,6 +38,7 @@ export async function ProblemSolutions() {
                 <Reveal delay={0.04 * (index + 1)} className="h-full">
                   <SolutionCard
                     icon={problemSolutionIcons[id]}
+                    title={t(`items.${id}.title`)}
                     body={t(`items.${id}.body`)}
                   />
                 </Reveal>

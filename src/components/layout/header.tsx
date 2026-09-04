@@ -4,15 +4,16 @@ import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { navigationItems } from "@/content/navigation";
 import { Link, usePathname } from "@/i18n/navigation";
-import { Container } from "@/components/layout/container";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import { MobileMenu } from "@/components/layout/mobile-menu";
 import { Logo } from "@/components/shared/logo";
 import { PrimaryButton } from "@/components/shared/primary-button";
+import { getWhatsAppUrl } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 export function Header() {
   const t = useTranslations("Navigation");
+  const tWhatsApp = useTranslations("WhatsApp");
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,22 +28,24 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 border-b transition-colors duration-300",
+        "sticky top-0 z-50 w-full border-b transition-colors duration-300",
         scrolled || menuOpen
           ? "border-soft-gray/10 bg-deep-graphite/95 backdrop-blur-md"
           : "border-transparent bg-transparent",
       )}
     >
-      <Container className="flex h-header items-center justify-between gap-3 sm:gap-4">
-        <Logo
-          size="md"
-          className="relative z-50 shrink-0"
-          priority
-          onClick={() => setMenuOpen(false)}
-        />
+      <div className="relative flex h-header w-full items-center gap-3 px-[var(--page-gutter)] sm:gap-4">
+        <div className="relative z-50 flex min-w-0 flex-1 items-center justify-start">
+          <Logo
+            size="md"
+            className="shrink-0"
+            priority
+            onClick={() => setMenuOpen(false)}
+          />
+        </div>
 
         <nav
-          className="hidden min-w-0 items-center gap-0.5 lg:flex"
+          className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-0.5 lg:flex"
           aria-label="Main"
         >
           {navigationItems.map((item) => {
@@ -64,13 +67,19 @@ export function Header() {
           })}
         </nav>
 
-        <div className="hidden shrink-0 items-center gap-3 lg:flex">
-          <LocaleSwitcher label={t("language")} />
-          <PrimaryButton href="/contact">{t("cta")}</PrimaryButton>
+        <div className="relative z-50 flex flex-1 items-center justify-end gap-2 sm:gap-3">
+          <div className="hidden items-center gap-3 lg:flex">
+            <LocaleSwitcher label={t("language")} />
+            <PrimaryButton
+              href={getWhatsAppUrl("alejandro", tWhatsApp("prefillAlejandro"))}
+              external
+            >
+              {t("cta")}
+            </PrimaryButton>
+          </div>
+          <MobileMenu open={menuOpen} onOpenChange={setMenuOpen} />
         </div>
-
-        <MobileMenu open={menuOpen} onOpenChange={setMenuOpen} />
-      </Container>
+      </div>
     </header>
   );
 }

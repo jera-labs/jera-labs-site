@@ -15,7 +15,7 @@ export async function ThinkingProcess() {
   return (
     <section
       id={homeSections.thinkingProcess}
-      className="relative border-b border-soft-gray/10"
+      className="section-surface section-surface-navy relative"
       aria-labelledby="thinking-process-heading"
     >
       <Container className="py-[var(--section-y)]">
@@ -25,6 +25,7 @@ export async function ThinkingProcess() {
             as="h2"
             align="center"
             title={t("title")}
+            description={t("description")}
             className="mx-auto"
           />
         </Reveal>

@@ -1,4 +1,6 @@
+import { getTranslations } from "next-intl/server";
 import { PrimaryButton } from "@/components/shared/primary-button";
+import { getWhatsAppUrl } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 type PageCtaProps = {
@@ -8,12 +10,14 @@ type PageCtaProps = {
   className?: string;
 };
 
-export function PageCta({
+export async function PageCta({
   title,
   description,
   ctaLabel,
   className,
 }: PageCtaProps) {
+  const t = await getTranslations("WhatsApp");
+
   return (
     <div
       className={cn(
@@ -30,7 +34,12 @@ export function PageCta({
         </p>
       ) : null}
       <div className="mt-6 flex justify-center">
-        <PrimaryButton href="/contact">{ctaLabel}</PrimaryButton>
+        <PrimaryButton
+          href={getWhatsAppUrl("alejandro", t("prefillAlejandro"))}
+          external
+        >
+          {ctaLabel}
+        </PrimaryButton>
       </div>
     </div>
   );

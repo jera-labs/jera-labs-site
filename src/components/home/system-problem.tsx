@@ -15,7 +15,7 @@ export async function SystemProblem() {
   return (
     <section
       id={homeSections.systemProblem}
-      className="relative border-b border-soft-gray/10"
+      className="section-surface section-surface-base relative"
       aria-labelledby="system-problem-heading"
     >
       <Container className="py-[var(--section-y)]">
@@ -30,7 +30,7 @@ export async function SystemProblem() {
           />
         </Reveal>
 
-        <ul className="mx-auto mt-10 w-full max-w-3xl list-none p-0 sm:mt-12">
+        <ul className="mx-auto mt-10 w-full max-w-4xl list-none p-0 sm:mt-12">
           {systemProblemItemIds.map((id: SystemProblemItemId, index) => (
             <li key={id}>
               <Reveal delay={0.04 * (index + 1)}>
